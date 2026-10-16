@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="KuKu Kids Care offers fun English speaking, reading, phonics and creative learning classes for children, online and offline in Bokaro Steel City, Jharkhand.">
+<title>KuKu Kids Care | Learn English with Fun</title>
+<style>
+:root{--purple:#6847d9;--pink:#ff6cae;--yellow:#ffd85e;--blue:#6dd8f0;--ink:#252244;--paper:#fffaf2}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Nunito,"Trebuchet MS",Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
+header{position:sticky;top:0;z-index:5;background:#fffdf8ee;backdrop-filter:blur(8px);border-bottom:1px solid #eee7ff}
+.nav{max-width:1120px;margin:auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:1.18rem;color:var(--purple);text-decoration:none}
+.logo{width:44px;height:44px;border-radius:15px;background:linear-gradient(135deg,var(--yellow),var(--pink));display:grid;place-items:center;font-size:24px;box-shadow:0 5px 12px #6847d926}
+nav{display:flex;gap:18px;align-items:center;flex-wrap:wrap}nav a{font-weight:800;font-size:.92rem;text-decoration:none;color:var(--ink)}
+.btn{display:inline-block;background:var(--purple);color:white!important;padding:12px 19px;border-radius:999px;text-decoration:none;font-weight:900;border:0;cursor:pointer;box-shadow:0 6px 0 #4830a5;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}.btn.pink{background:var(--pink);box-shadow:0 6px 0 #d94787}.btn.yellow{background:var(--yellow);color:var(--ink)!important;box-shadow:0 6px 0 #d6ad35}
+.hero{overflow:hidden;position:relative;background:linear-gradient(120deg,#f5eaff,#e7faff 55%,#fff2d2);padding:72px 20px 66px}
+.hero-inner{max-width:1120px;margin:auto;display:grid;grid-template-columns:1.1fr .9fr;gap:38px;align-items:center}
+.eyebrow{display:inline-block;background:white;border:2px dashed #c6b6ff;border-radius:999px;padding:6px 14px;font-weight:900;color:var(--purple)}
+h1{font-size:clamp(2.5rem,5vw,4.5rem);line-height:1.06;letter-spacing:-1.8px;margin:18px 0}
+h1 span{color:var(--pink)}.hero p{font-size:1.14rem;max-width:570px;color:#55516f}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:25px}
+.art{min-height:340px;position:relative;display:grid;place-items:center}
+.sun{position:absolute;width:280px;height:280px;background:var(--yellow);border-radius:48% 52% 60% 40%;transform:rotate(-12deg)}
+.kid-card{position:relative;background:#fff;border:5px solid white;border-radius:35px;padding:28px 25px;text-align:center;box-shadow:0 18px 50px #392b751f;transform:rotate(3deg);max-width:310px}
+.kid-card .emoji{font-size:6rem;line-height:1.2}.kid-card strong{display:block;font-size:1.5rem;color:var(--purple)}.kid-card small{font-weight:800;color:#746d8e}
+.float{position:absolute;border-radius:18px;padding:12px 15px;background:white;font-weight:900;box-shadow:0 10px 24px #392b7517}.f1{top:15px;left:0;transform:rotate(-7deg)}.f2{right:0;bottom:28px;transform:rotate(6deg)}
+section{padding:70px 20px}.container{max-width:1120px;margin:auto}.section-head{text-align:center;max-width:700px;margin:0 auto 38px}.section-head h2{font-size:clamp(2rem,4vw,3rem);line-height:1.15;margin:0 0 12px}.section-head p{color:#69647e}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:#fff;border:1px solid #eee8ff;border-radius:25px;padding:25px;box-shadow:0 10px 28px #392b7509}.card .icon{width:58px;height:58px;display:grid;place-items:center;border-radius:18px;font-size:1.8rem;background:#f0eaff}.card:nth-child(2) .icon{background:#fff0f6}.card:nth-child(3) .icon{background:#e7faff}.card h3{margin:14px 0 7px;font-size:1.25rem}.card p{margin:0;color:#69647e}
+.band{background:var(--purple);color:white;border-radius:32px;padding:38px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center}.band h2{font-size:2.2rem;line-height:1.15;margin:0 0 10px}.band p{margin:0;color:#e8e1ff}
+.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:32px;align-items:center}.coach-art{min-height:290px;background:linear-gradient(135deg,#ffebf4,#e6f9ff);border-radius:32px;display:grid;place-items:center;text-align:center;padding:25px}.coach-art .emoji{font-size:6rem}.coach-art strong{display:block;font-size:1.5rem;color:var(--purple)}.about h2{font-size:2.5rem;line-height:1.15;margin:0 0 12px}.check{list-style:none;padding:0}.check li{margin:10px 0;font-weight:800}.check li:before{content:"✓";color:#2cae85;font-weight:1000;margin-right:10px}
+.trial{background:linear-gradient(120deg,#fff0f6,#f0eaff);border-radius:32px;padding:36px}.trial-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}.trial h2{font-size:2.4rem;line-height:1.15;margin:0 0 12px}.form{background:white;padding:24px;border-radius:24px;box-shadow:0 12px 30px #392b7510}.form label{display:block;font-weight:900;margin:12px 0 5px}.form input,.form select,.form textarea{width:100%;padding:12px 13px;border:1.5px solid #e0d9f6;border-radius:12px;font:inherit;background:#fffdfd}.form input:focus,.form select:focus,.form textarea:focus{outline:3px solid #e6ddff;border-color:var(--purple)}.form button{margin-top:18px;width:100%;font:inherit;font-weight:900}.tiny{font-size:.83rem;color:#77718b}
+footer{background:#24203f;color:white;padding:38px 20px}.footer-inner{max-width:1120px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}.footer-inner p{margin:4px 0;color:#d5d0e8}.footer-inner a{color:#ffe17d}
+.whatsapp{position:fixed;right:18px;bottom:18px;z-index:8;background:#20bf68;color:#fff;text-decoration:none;padding:13px 18px;border-radius:999px;font-weight:900;box-shadow:0 8px 22px #0002}
+@media(max-width:760px){nav a:not(.btn){display:none}.hero{padding-top:45px}.hero-inner,.about-grid,.trial-grid{grid-template-columns:1fr}.art{min-height:300px}.cards{grid-template-columns:1fr}.band{grid-template-columns:1fr;padding:28px}.section-head{text-align:left}.hero-inner{gap:10px}section{padding:52px 18px}.trial{padding:22px}.about h2{font-size:2.1rem}}
+</style>
+</head>
+<body>
+<header><div class="nav">
+<a class="brand" href="#home"><span class="logo">📚</span><span>KuKu Kids Care</span></a>
+<nav><a href="#classes">Our Classes</a><a href="#about">About Coach</a><a href="#trial">Free Trial</a><a class="btn" href="#trial">Book a Free Class</a></nav>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="hero-inner">
+<div><span class="eyebrow">✨ Learn • Speak • Shine</span><h1>English learning can be <span>fun!</span></h1>
+<p>A happy learning space where children build English speaking confidence, reading skills and creativity through playful activities.</p>
+<div class="hero-actions"><a class="btn pink" href="#trial">🎈 Book a Free Trial</a><a class="btn yellow" href="#classes">Explore Classes ↓</a></div>
+<p class="tiny">Online classes and offline classes in Bokaro Steel City, Jharkhand.</p></div>
+<div class="art"><div class="sun"></div><div class="float f1">🔤 Phonics Fun</div><div class="kid-card"><div class="emoji">🧒🏻 📖</div><strong>Little Learners</strong><small>Big confidence, one word at a time!</small></div><div class="float f2">⭐ Speak with confidence</div></div>
+</div></section>
+<section id="classes"><div class="container"><div class="section-head"><h2>Learning that feels like play</h2><p>Friendly lessons, fun practice and small steps that help children learn with confidence.</p></div>
+<div class="cards">
+<div class="card"><div class="icon">🗣️</div><h3>Spoken English</h3><p>Everyday conversations, useful sentences and confidence to speak English.</p></div>
+<div class="card"><div class="icon">🔤</div><h3>Phonics & Reading</h3><p>Letter sounds, word building, pronunciation and early reading practice.</p></div>
+<div class="card"><div class="icon">🎨</div><h3>Creative Activities</h3><p>Stories, poems, vocabulary games and activities that make learning memorable.</p></div>
+</div></div></section>
+<section><div class="container"><div class="band"><div><h2>Small steps today. Confident speakers tomorrow!</h2><p>Ask us about class timings and the best learning option for your child.</p></div><a class="btn yellow" href="https://wa.me/918810397239?text=Hello%20KuKu%20Kids%20Care%2C%20I%20want%20to%20know%20about%20English%20classes." target="_blank" rel="noopener">Chat on WhatsApp ↗</a></div></div></section>
+<section id="about"><div class="container about-grid"><div class="coach-art"><div><div class="emoji">👨‍🏫</div><strong>Coach Ranjeet Kumar</strong><span>MBA</span></div></div>
+<div class="about"><span class="eyebrow">Meet your coach</span><h2>A supportive place for every young learner</h2><p>Hi! I’m Coach Ranjeet Kumar. At KuKu Kids Care, our goal is to make English practice encouraging, practical and enjoyable for children. We focus on participation, regular practice and learning at a comfortable pace.</p><ul class="check"><li>Online and offline learning options</li><li>Speaking, reading and vocabulary practice</li><li>Friendly, child-focused activities</li></ul><p class="tiny">Offline classes: Bokaro Steel City, Jharkhand. Please contact us to confirm location and available timings.</p></div>
+</div></section>
+<section id="trial"><div class="container"><div class="trial"><div class="trial-grid"><div><span class="eyebrow">🎁 Start with a free trial</span><h2>Let’s find the right class for your child.</h2><p>Fill in the short form. It will open WhatsApp with your details so you can send your enquiry to KuKu Kids Care.</p><p><strong>📱 WhatsApp / Call:</strong><br><a href="tel:+918810397239">8810397239</a></p><p class="tiny">Your message is not sent automatically. Review it in WhatsApp and tap Send.</p></div>
+<form class="form" id="trialForm">
+<label for="parent">Parent/Guardian Name</label><input id="parent" name="parent" required placeholder="Enter your name">
+<label for="child">Child's Name</label><input id="child" name="child" required placeholder="Enter child's name">
+<label for="age">Child's Age</label><select id="age" name="age" required><option value="">Choose age</option><option>3–4 years</option><option>5–6 years</option><option>7–9 years</option><option>10+ years</option></select>
+<label for="mode">Preferred Class</label><select id="mode" name="mode" required><option value="">Choose class type</option><option>Online</option><option>Offline – Bokaro Steel City</option><option>Either online or offline</option></select>
+<label for="goal">What would your child like to practise? (optional)</label><textarea id="goal" name="goal" rows="2" placeholder="Speaking, reading, phonics..."></textarea>
+<button class="btn pink" type="submit">Request Free Trial on WhatsApp →</button><p class="tiny">Please don't enter sensitive personal information.</p>
+</form></div></div></div></section>
+</main>
+<footer><div class="footer-inner"><div><div class="brand" style="color:white"><span class="logo">📚</span><span>KuKu Kids Care</span></div><p>Learn English with fun, confidence and creativity.</p></div><div><strong>Contact</strong><p>Bokaro Steel City, Jharkhand</p><p>WhatsApp: <a href="https://wa.me/918810397239">8810397239</a></p></div><p>© <span id="year"></span> KuKu Kids Care</p></div></footer>
+<a class="whatsapp" href="https://wa.me/918810397239?text=Hello%20KuKu%20Kids%20Care%2C%20I%20want%20to%20enquire%20about%20classes." target="_blank" rel="noopener">☘ WhatsApp</a>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('trialForm').addEventListener('submit', function(e){
+ e.preventDefault();
+ const v = id => document.getElementById(id).value.trim();
+ const message = `Hello KuKu Kids Care! I would like to request a free trial class.\\nParent/Guardian: ${v('parent')}\\nChild: ${v('child')}\\nAge: ${v('age')}\\nPreferred class: ${v('mode')}\\nLearning goals: ${v('goal') || 'Not specified'}`;
+ window.open('https://wa.me/918810397239?text=' + encodeURIComponent(message), '_blank', 'noopener');
+});
+</script>
+</body>
+</html>
