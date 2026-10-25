@@ -57,6 +57,63 @@ footer{background:#24203f;color:white;padding:38px 20px}.footer-inner{max-width:
   cursor: pointer;
 }
 
+.kuku-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 12px 16px;
+  text-decoration: none;
+  background: linear-gradient(135deg, #fff0f8, #eaf4ff);
+  border: 2px solid #ffc0df;
+  border-radius: 18px;
+  box-shadow: 0 5px 16px rgba(230, 70, 150, 0.18);
+}
+
+.kuku-star {
+  font-size: 38px;
+}
+
+.kuku-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.kuku-main {
+  font-size: clamp(25px, 5vw, 38px);
+  font-weight: 900;
+  line-height: 1.2;
+  background: linear-gradient(90deg, #ff3985, #7652e8, #168bd5);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 0.3px;
+}
+
+.kuku-tagline {
+  margin-top: 5px;
+  color: #6546a8;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 480px) {
+  .kuku-brand {
+    gap: 8px;
+    padding: 10px;
+  }
+
+  .kuku-star {
+    font-size: 30px;
+  }
+
+  .kuku-tagline {
+    font-size: 11px;
+  }
+}
+
 </style>
 </head>
 <body>
