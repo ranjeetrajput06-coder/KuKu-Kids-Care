@@ -161,6 +161,49 @@ footer{background:#24203f;color:white;padding:38px 20px}.footer-inner{max-width:
 .kuku-top-menu .kuku-btn:hover {
   opacity: 0.85;
 }
+
+.kuku-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.kuku-dropbtn {
+  background: #548cff;
+  color: white;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.kuku-dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 190px;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  z-index: 9999;
+}
+
+.kuku-dropdown:hover .kuku-dropdown-content,
+.kuku-dropdown:focus-within .kuku-dropdown-content {
+  display: block;
+}
+
+.kuku-dropdown-content a {
+  display: block;
+  padding: 12px;
+  color: #222;
+  text-decoration: none;
+}
+
+.kuku-dropdown-content a:hover {
+  background: #eaf4ff;
+}
 </style>
 
 
@@ -218,6 +261,20 @@ footer{background:#24203f;color:white;padding:38px 20px}.footer-inner{max-width:
   <a href="#coach">Coach</a>
   <a href="#contact">Contact</a>
 </nav>
+
+<div class="kuku-dropdown">
+  <button class="kuku-dropbtn" type="button">
+    Study Material ▾
+  </button>
+
+  <div class="kuku-dropdown-content">
+    <a href="#english-notes">English Notes</a>
+    <a href="#worksheets">Worksheets</a>
+    <a href="#phonics">Phonics</a>
+    <a href="#grammar">Grammar</a>
+    <a href="#class-material">Class-wise Material</a>
+  </div>
+</div>
       
       
       
