@@ -204,6 +204,44 @@ footer{background:#24203f;color:white;padding:38px 20px}.footer-inner{max-width:
 .kuku-dropdown-content a:hover {
   background: #eaf4ff;
 }
+
+.kuku-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.kuku-dropbtn {
+  background: #548cff;
+  color: white;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.kuku-dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 170px;
+  background: white;
+  box-shadow: 0 4px 10px #999;
+  border-radius: 8px;
+  z-index: 9999;
+}
+
+.kuku-dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: #222;
+  text-decoration: none;
+}
+
+.kuku-dropdown-content a:hover {
+  background: #eaf4ff;
+}
 </style>
 
 
@@ -261,7 +299,22 @@ footer{background:#24203f;color:white;padding:38px 20px}.footer-inner{max-width:
   <a href="#why-us">Why Us</a>
   <a href="#coach">Coach</a>
   <a href="#contact">Contact</a>
-<a href="#study-material">Study Material</a>
+
+<div class="kuku-dropdown">
+  <button class="kuku-dropbtn" type="button"
+    onclick="document.getElementById('kukuMaterials').style.display =
+    document.getElementById('kukuMaterials').style.display === 'block'
+    ? 'none' : 'block'">
+    Study Material ▾
+  </button>
+
+  <div class="kuku-dropdown-content" id="kukuMaterials">
+    <a href="#english-notes">English Notes</a>
+    <a href="#phonics">Phonics</a>
+    <a href="#reading-practice">Reading Practice</a>
+  </div>
+</div>
+
   
   </div>
 </nav>
