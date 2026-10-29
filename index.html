@@ -259,6 +259,171 @@ footer{background:#24203f;color:white;padding:38px 20px}.footer-inner{max-width:
   margin-right: 8px;
 }
 
+/* KuKu Kids Care - Digital Skills Section */
+.dsm-section {
+  padding: 65px 18px;
+  background: linear-gradient(135deg, #f0f9ff, #fff7ed);
+  font-family: Arial, sans-serif;
+  scroll-margin-top: 90px;
+}
+
+.dsm-container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.dsm-heading {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 35px;
+}
+
+.dsm-tag {
+  display: inline-block;
+  color: #075985;
+  background: #dbeafe;
+  padding: 8px 14px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.dsm-heading h2 {
+  color: #12305a;
+  font-size: clamp(26px, 4vw, 38px);
+  margin: 16px 0 12px;
+}
+
+.dsm-heading p {
+  color: #536477;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.dsm-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.dsm-card {
+  background: #ffffff;
+  padding: 26px 22px;
+  border-radius: 18px;
+  border: 1px solid #e0eaf5;
+  box-shadow: 0 7px 22px rgba(25, 55, 90, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.dsm-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(25, 55, 90, 0.14);
+}
+
+.dsm-icon {
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  background: #eaf4ff;
+  border-radius: 15px;
+  font-size: 30px;
+}
+
+.dsm-card h3 {
+  color: #17345b;
+  font-size: 20px;
+  margin: 19px 0 10px;
+}
+
+.dsm-card p {
+  color: #596779;
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 0 0 22px;
+  flex-grow: 1;
+}
+
+.dsm-btn {
+  color: #075985;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px 0;
+}
+
+.dsm-btn:hover {
+  color: #ea580c;
+}
+
+.dsm-bottom {
+  text-align: center;
+  margin-top: 42px;
+  padding: 30px 18px;
+  border-radius: 18px;
+  background: #12305a;
+  color: #ffffff;
+}
+
+.dsm-bottom h3 {
+  font-size: 25px;
+  margin: 0 0 10px;
+}
+
+.dsm-bottom p {
+  line-height: 1.7;
+}
+
+.dsm-main-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 13px 24px;
+  border-radius: 30px;
+  background: #fbbf24;
+  color: #17345b;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.dsm-main-btn:hover {
+  background: #f59e0b;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .dsm-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Mobile */
+@media (max-width: 560px) {
+  .dsm-section {
+    padding: 42px 14px;
+  }
+
+  .dsm-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .dsm-card {
+    padding: 22px 18px;
+  }
+
+  .dsm-heading p {
+    font-size: 14px;
+  }
+
+  .dsm-bottom h3 {
+    font-size: 22px;
+  }
+}
+
 </style>
 
 
@@ -384,5 +549,80 @@ document.getElementById('trialForm').addEventListener('submit', function(e){
  window.open('https://wa.me/918810397239?text=' + encodeURIComponent(message), '_blank', 'noopener');
 });
 </script>
-</body>
+
+<!-- KuKu Kids Care: Digital Skills & Marketing -->
+<section id="digital-skills" class="dsm-section">
+  <div class="dsm-container">
+
+    <div class="dsm-heading">
+      <span class="dsm-tag">FUTURE-READY SKILLS</span>
+      <h2>Digital Skills &amp; Marketing</h2>
+      <p>
+        Learn digital skills, explore new technology and
+        discover creative ways to grow in the digital world.
+      </p>
+    </div>
+
+    <div class="dsm-grid">
+
+      <article class="dsm-card">
+        <div class="dsm-icon">💻</div>
+        <h3>Website Building</h3>
+        <p>Learn website design, HTML, CSS, responsive layouts
+          and the basics of website publishing.</p>
+        <a href="#trial" class="dsm-btn">Explore Course →</a>
+      </article>
+
+      <article class="dsm-card">
+        <div class="dsm-icon">📱</div>
+        <h3>App Development</h3>
+        <p>Explore mobile app concepts, UI/UX design,
+          no-code tools and app development basics.</p>
+        <a href="#trial" class="dsm-btn">Explore Course →</a>
+      </article>
+
+      <article class="dsm-card">
+        <div class="dsm-icon">🤖</div>
+        <h3>Artificial Intelligence</h3>
+        <p>Discover AI tools for learning, content creation,
+          presentations and creative projects.</p>
+        <a href="#trial" class="dsm-btn">Explore Course →</a>
+      </article>
+
+      <article class="dsm-card">
+        <div class="dsm-icon">📣</div>
+        <h3>Social Media Marketing</h3>
+        <p>Learn content planning, Instagram and Facebook
+          marketing, engagement and analytics.</p>
+        <a href="#trial" class="dsm-btn">Explore Course →</a>
+      </article>
+
+      <article class="dsm-card">
+        <div class="dsm-icon">🎯</div>
+        <h3>Google Ads</h3>
+        <p>Understand keyword research, search campaigns,
+          ad budgets and performance tracking.</p>
+        <a href="#trial" class="dsm-btn">Explore Course →</a>
+      </article>
+
+      <article class="dsm-card">
+        <div class="dsm-icon">▶️</div>
+        <h3>YouTube Ads & Marketing</h3>
+        <p>Learn video strategy, thumbnails, YouTube SEO,
+          video advertising and channel analytics.</p>
+        <a href="#trial" class="dsm-btn">Explore Course →</a>
+      </article>
+
+    </div>
+
+    <div class="dsm-bottom">
+      <h3>Build Your Digital Future!</h3>
+      <p>Start exploring technology and digital marketing skills.</p>
+      <a href="#trial" class="dsm-main-btn">Register for a Trial</a>
+    </div>
+
+  </div>
+</section>
+
+    </body>
 </html>
