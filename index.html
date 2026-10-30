@@ -624,5 +624,287 @@ document.getElementById('trialForm').addEventListener('submit', function(e){
   </div>
 </section>
 
+<!-- ==================================
+ KUKU KIDS CARE - ENGLISH COURSE PORTAL
+=================================== -->
+
+<!-- Add this link inside your existing NAV -->
+<a href="#" onclick="kkcOpen(); return false;">
+  📚 English Course
+</a>
+
+<!-- COURSE POPUP -->
+<div id="kkcPortal">
+  <div class="kkc-window">
+
+    <button class="kkc-close" onclick="kkcClose()">×</button>
+
+    <h1>🌟 KuKu Kids Care</h1>
+    <h2>Complete English Learning Portal</h2>
+    <p class="kkc-tag">Learn • Speak • Read • Write • Grow</p>
+
+    <div class="kkc-levels">
+      <button onclick="kkcLevel(0)">Level 1<br>Age 3–5</button>
+      <button onclick="kkcLevel(1)">Level 2<br>Age 6–8</button>
+      <button onclick="kkcLevel(2)">Level 3<br>Age 9–12</button>
+    </div>
+
+    <h3 id="kkcHeading">Beginner English</h3>
+
+    <div id="kkcChapters"></div>
+
+    <div id="kkcLesson">
+      <h3>Welcome to English Learning!</h3>
+      <p>Select a chapter above to start learning.</p>
+    </div>
+
+    <a href="#trial" class="kkc-trial">
+      Book a Free Trial Class
+    </a>
+
+    <p class="kkc-footer">
+      © KuKu Kids Care | English Learning Programme
+    </p>
+
+  </div>
+</div>
+
+<style>
+#kkcPortal {
+  display:none;
+  position:fixed;
+  inset:0;
+  z-index:999999;
+  background:rgba(0,0,0,.78);
+  justify-content:center;
+  align-items:center;
+  padding:10px;
+  box-sizing:border-box;
+}
+
+.kkc-window {
+  background:#fff;
+  width:100%;
+  max-width:650px;
+  max-height:92vh;
+  overflow-y:auto;
+  padding:20px;
+  border-radius:18px;
+  box-sizing:border-box;
+  text-align:center;
+  position:relative;
+  font-family:Arial,sans-serif;
+}
+
+.kkc-window h1 {
+  color:#087fa5;
+  margin:10px 0;
+}
+
+.kkc-window h2 {
+  color:#ff8c00;
+  font-size:20px;
+}
+
+.kkc-tag { color:#666; }
+
+.kkc-close {
+  position:sticky;
+  top:0;
+  float:right;
+  background:#ff5252;
+  color:white;
+  border:0;
+  border-radius:50%;
+  width:38px;
+  height:38px;
+  font-size:26px;
+  cursor:pointer;
+  z-index:2;
+}
+
+.kkc-levels {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:8px;
+  margin:20px 0;
+}
+
+.kkc-levels button {
+  background:#087fa5;
+  color:white;
+  border:0;
+  border-radius:10px;
+  padding:12px 4px;
+  font-weight:bold;
+  cursor:pointer;
+  line-height:1.6;
+}
+
+#kkcChapters {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:8px;
+  margin:15px 0;
+}
+
+.kkc-chapter {
+  background:#f0f8ff;
+  border:1px solid #cde5f5;
+  border-radius:9px;
+  padding:12px;
+  text-align:left;
+  cursor:pointer;
+  color:#125577;
+  font-weight:bold;
+}
+
+.kkc-chapter:hover {
+  background:#dff4ff;
+}
+
+#kkcLesson {
+  background:#fff8e9;
+  border-radius:12px;
+  padding:15px;
+  margin:15px 0;
+  text-align:left;
+  line-height:1.7;
+}
+
+#kkcLesson h3 { color:#087fa5; }
+#kkcLesson h4 { color:#e47b00; }
+
+.kkc-trial {
+  display:block;
+  background:#ff8c00;
+  color:white;
+  padding:14px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:bold;
+  margin-top:18px;
+}
+
+.kkc-footer {
+  color:#888;
+  font-size:12px;
+  margin-top:18px;
+}
+
+@media(max-width:420px) {
+  #kkcChapters { grid-template-columns:1fr; }
+  .kkc-window { padding:13px; }
+}
+</style>
+
+<script>
+const kkcCourses = [
+
+{
+ name:"Beginner English",
+ chapters:[
+ ["Alphabet A–Z","English has 26 letters. Learn capital and small letters.","A a, B b, C c, D d","Write A to Z and identify five letters."],
+ ["Vowels & Consonants","The five vowels are A, E, I, O, U. All other letters are consonants.","Apple, Egg, Ink, Orange, Umbrella","Circle the vowels in CAT, DOG and SUN."],
+ ["Phonics","Phonics teaches the sounds of letters.","B says /b/ as in Ball. M says /m/ as in Mango.","Say the sounds of B, C, D, F and M."],
+ ["Small Words","Learn to read simple two and three-letter words.","Am, An, At, Cat, Bat, Sun, Pen","Read five words aloud."],
+ ["Colours & Shapes","Learn the names of colours and shapes.","Red, Blue, Green, Circle, Square, Triangle","Name three colours and three shapes."],
+ ["Fruits & Vegetables","Learn the names of common fruits and vegetables.","Apple, Mango, Banana, Potato, Carrot, Tomato","Name five fruits and five vegetables."],
+ ["Animals & Birds","Learn animal and bird names.","Lion, Tiger, Dog, Cat, Parrot, Peacock","Identify five animals and five birds."],
+ ["Numbers 1–100","Learn counting and number names.","One, Two, Three, Four, Five, Ten","Count objects from 1 to 20."],
+ ["Body Parts & Family","Learn body parts and family relationships.","Head, Eyes, Nose, Mother, Father, Sister","Make five sentences about your family."],
+ ["Greetings & Simple Sentences","Use polite words and simple English sentences.","Hello! Good Morning! Thank You! My name is Riya.","Introduce yourself in three sentences."]
+ ]
+},
+
+{
+ name:"Intermediate English",
+ chapters:[
+ ["Parts of Speech","Words have different jobs in a sentence. These include nouns, pronouns, verbs and adjectives.","Riya sings beautifully. Riya = noun; sings = verb.","Identify the noun and verb in: The boy runs."],
+ ["Noun & Pronoun","A noun names a person, place, animal or thing. A pronoun replaces a noun.","Ravi is a boy. He is kind. He = pronoun.","Replace Riya with a suitable pronoun."],
+ ["Verb & Adjective","A verb shows an action. An adjective describes a noun.","The clever girl reads. Clever = adjective; reads = verb.","Find the verb and adjective in three sentences."],
+ ["Articles","A and An are used with singular countable nouns. The refers to something specific.","A cat, An apple, The Sun.","Fill in: ___ elephant, ___ book, ___ moon."],
+ ["Singular & Plural","Singular means one. Plural means more than one.","Book–Books, Box–Boxes, Child–Children.","Write the plurals of five nouns."],
+ ["Is, Am, Are","Use am with I, is with he/she/it, and are with you/we/they.","I am happy. She is kind. They are students.","Complete five sentences using is, am, are."],
+ ["Has, Have, Had","Use has with he/she/it, have with I/you/we/they, and had for past possession.","She has a pen. I have a book. He had a toy.","Choose the correct form in five sentences."],
+ ["Present & Past","Present tense describes current or regular actions. Past tense describes completed past actions.","I play. I played. She walks. She walked.","Change five present-tense sentences into past."],
+ ["Prepositions","Prepositions show relationships of place or time.","The book is on the table. The cat is under the chair.","Use in, on, under and behind in sentences."],
+ ["Sentence Formation","A simple sentence usually has a subject and a verb.","The children play. My mother cooks.","Make five sentences using given words."],
+ ["Reading Comprehension","Read a passage carefully and answer questions about it.","Ravi has a red ball. He plays with it.","Write who has the ball and its colour."],
+ ["Paragraph Writing","A paragraph contains related sentences about one topic.","My School: My school is beautiful. I love my teachers.","Write five sentences about your school."],
+ ["Daily Use English","Practise useful English for everyday situations.","May I come in? Please help me. Where are you going?","Practise five daily-use sentences."],
+ ["Conversation Practice","Learn to ask and answer questions politely.","A: How are you? B: I am fine, thank you.","Create a conversation between two friends."],
+ ["Story Writing","A story has characters, a setting and events.","A little bird helped its friend. They became happy.","Write a short story with a moral."]
+ ]
+},
+
+{
+ name:"Advanced English",
+ chapters:[
+ ["Advanced Parts of Speech","Study all eight parts of speech and their functions.","She speaks very clearly. She = pronoun; clearly = adverb.","Identify all parts of speech in five sentences."],
+ ["Tenses","Tenses show when an action happens: present, past and future.","I write. I wrote. I will write.","Write three sentences in each tense."],
+ ["Modal Verbs","Modal verbs express ability, permission, advice or possibility.","I can swim. You should study. May I enter?","Make sentences using can, could, should and must."],
+ ["Active & Passive Voice","Active voice focuses on the doer. Passive voice focuses on the action or receiver.","Active: Riya writes a letter. Passive: A letter is written by Riya.","Convert five active sentences into passive."],
+ ["Direct & Indirect Speech","Direct speech quotes exact words. Indirect speech reports what someone said.","Direct: He said, 'I am happy.' Indirect: He said that he was happy.","Change three direct sentences into indirect speech."],
+ ["Subject-Verb Agreement","The verb must agree with its subject in number and person.","She plays. They play. The boy runs.","Choose correct verbs in five sentences."],
+ ["Conjunctions & Prepositions","Conjunctions join words or clauses. Prepositions show relationships.","I was tired but happy. The pen is in the box.","Use and, but, because and although."],
+ ["Question Formation","Learn yes/no questions and WH questions.","Where do you live? Why are you happy?","Write five questions using WH words."],
+ ["Vocabulary & Idioms","Expand vocabulary and understand common expressions.","Brave = courageous. A piece of cake = something easy.","Learn five new words and use them in sentences."],
+ ["Letter & Email Writing","Learn formal and informal writing formats.","Dear Friend, I hope you are well.","Write an email inviting a friend."],
+ ["Essay & Creative Writing","Organise ideas into an introduction, body and conclusion.","Topics: My Favourite Book, Trees, Technology.","Write a short essay on your favourite hobby."],
+ ["Reading Comprehension","Understand the main idea, details and meaning of a passage.","Read a short passage and identify its main idea.","Answer five questions about a passage."],
+ ["Public Speaking","Organise and present ideas clearly and confidently.","Topic: My Dream for the Future.","Prepare a one-minute speech."],
+ ["Storytelling","Create interesting stories with a beginning, middle and ending.","Use a character, a problem and a solution.","Tell a story using five picture clues."],
+ ["Group Discussion & Debate","Listen respectfully, express opinions and support ideas.","I agree because... I have a different opinion...","Discuss: Books or Television?"],
+ ["Interview & Communication","Practise introductions, clear answers and polite communication.","Tell me about yourself. What are your hobbies?","Prepare answers to five simple interview questions."]
+ ]
+}
+
+];
+
+function kkcOpen() {
+ document.getElementById("kkcPortal").style.display="flex";
+ kkcLevel(0);
+}
+
+function kkcClose() {
+ document.getElementById("kkcPortal").style.display="none";
+}
+
+function kkcLevel(index) {
+ const course=kkcCourses[index];
+ document.getElementById("kkcHeading").innerText=course.name;
+ const list=document.getElementById("kkcChapters");
+ list.innerHTML="";
+
+ course.chapters.forEach((chapter,i)=>{
+   const button=document.createElement("button");
+   button.className="kkc-chapter";
+   button.textContent=(i+1)+". "+chapter[0];
+   button.onclick=()=>kkcShowLesson(index,i);
+   list.appendChild(button);
+ });
+
+ document.getElementById("kkcLesson").innerHTML=
+ "<h3>Welcome to "+course.name+"</h3><p>Select any chapter to start learning.</p>";
+}
+
+function kkcShowLesson(level,index) {
+ const c=kkcCourses[level].chapters[index];
+ document.getElementById("kkcLesson").innerHTML=
+ "<h3>📖 "+c[0]+"</h3>"+
+ "<h4>Lesson Notes</h4><p>"+c[1]+"</p>"+
+ "<h4>Examples</h4><p>"+c[2]+"</p>"+
+ "<h4>Practice Activity</h4><p>"+c[3]+"</p>"+
+ "<p><strong>Keep practising every day!</strong></p>";
+}
+
+document.addEventListener("keydown",function(e){
+ if(e.key==="Escape") kkcClose();
+});
+</script>
+
+<!-- END KUKU KIDS CARE COURSE PORTAL -->
+
     </body>
 </html>
