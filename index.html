@@ -560,6 +560,106 @@ header {
     }
 }
 
+/* ===== KUKU KIDS CARE HEADER FIX ===== */
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+}
+
+.nav {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Logo and Brand */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    flex-shrink: 1;
+    min-width: 0;
+}
+
+.brand img {
+    width: 48px !important;
+    height: 48px !important;
+    object-fit: contain;
+}
+
+.brand span {
+    font-size: 20px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* Free Trial Button */
+.header-trial {
+    margin-left: auto;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+/* Navigation Menu */
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    width: 100%;
+}
+
+/* Desktop Screen */
+@media (min-width: 769px) {
+    .nav {
+        flex-wrap: nowrap;
+    }
+
+    .nav-links {
+        width: auto;
+        margin-left: auto;
+    }
+}
+
+/* Mobile Screen */
+@media (max-width: 768px) {
+    .nav {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .brand img {
+        width: 38px !important;
+        height: 38px !important;
+    }
+
+    .brand span {
+        font-size: 16px;
+    }
+
+    .header-trial {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+
+    .nav-links {
+        gap: 12px;
+        flex-wrap: wrap;
+        font-size: 13px;
+    }
+}
+
       </style>
 </head>
 
