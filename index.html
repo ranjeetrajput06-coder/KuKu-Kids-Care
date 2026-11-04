@@ -920,7 +920,263 @@ document.getElementById('trialForm').addEventListener('submit', function(e){
 
   </div>
 </section>
+<style>
+ 
+/* =====================================
+   KUKU KIDS CARE - FULL RESPONSIVE FIX
+===================================== */
 
+html, body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
 
+* {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    width: 100%;
+}
+
+.nav {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    padding: 12px 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main {
+    width: 100%;
+}
+
+.container,
+.hero-inner,
+.dsm-container,
+.footer-inner {
+    width: 100%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    width: 100%;
+    min-width: 0;
+}
+
+.hero-inner {
+    grid-template-columns: 1.1fr 0.9fr;
+}
+
+.cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.dsm-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.band,
+.trial-grid,
+.about-grid {
+    min-width: 0;
+}
+
+.card,
+.kuku-card,
+.dsm-card,
+.form {
+    min-width: 0;
+    overflow-wrap: break-word;
+}
+
+.kuku-brand {
+    max-width: 100%;
+}
+
+.whatsapp {
+    right: 15px;
+    bottom: 15px;
+    max-width: calc(100% - 30px);
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .hero-inner,
+    .about-grid,
+    .trial-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cards,
+    .dsm-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .nav {
+        padding: 12px 18px;
+    }
+
+    .band {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    header .nav {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 8px;
+        padding: 10px;
+    }
+
+    .brand {
+        font-size: 1rem;
+        gap: 6px;
+    }
+
+    .brand-logo {
+        width: 34px;
+        height: 34px;
+    }
+
+    .btn {
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 38px 14px;
+    }
+
+    .hero-inner {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: clamp(30px, 9vw, 42px);
+    }
+
+    .art {
+        min-height: 270px;
+    }
+
+    section {
+        padding: 42px 14px;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    .cards,
+    .dsm-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .about-grid,
+    .trial-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .band {
+        grid-template-columns: 1fr;
+        padding: 24px 18px;
+    }
+
+    .band h2,
+    .trial h2,
+    .about h2 {
+        font-size: 27px;
+    }
+
+    .trial {
+        padding: 18px;
+    }
+
+    .form {
+        padding: 17px;
+    }
+
+    .kuku-top-menu {
+        gap: 7px;
+        padding: 10px 5px;
+    }
+
+    .kuku-top-menu .kuku-btn {
+        padding: 9px 12px;
+        font-size: 13px;
+    }
+
+    .dsm-section {
+        padding: 35px 14px;
+    }
+
+    .course-poster img {
+        width: 100%;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .whatsapp {
+        right: 10px;
+        bottom: 12px;
+        padding: 11px 15px;
+        font-size: 14px;
+    }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 360px) {
+
+    .brand {
+        font-size: 14px;
+    }
+
+    .brand-logo {
+        width: 29px;
+        height: 29px;
+    }
+
+    .btn {
+        padding: 9px 10px;
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
+ 
+<style>
     </body>
 </html>
