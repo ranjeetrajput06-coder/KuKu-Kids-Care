@@ -5,1086 +5,894 @@
 <meta charset="UTF-8">
 <meta name="google-site-verification" content="vvn-u4LSf8b_L4PgU42dw-fKT-HlUoBJcQtZzgHtk58">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="KuKu Kids Care offers fun English speaking, reading, phonics, grammar, creativity and digital learning classes for children, online and offline in Bokaro Steel City, Jharkhand.">
+
+<meta name="description" content="KuKu Kids Care welcomes learners of all ages from Pre-Nursery to Post-Graduation. Learn Spoken English, Computer, Advanced Excel, AI, Digital Marketing, Tally, Coding and more in Bokaro and online.">
+
 <meta name="theme-color" content="#fffaf2">
 
-<title>KuKu Kids Care | Learn English with Fun</title>
+<title>KuKu Kids Care | Learning Has No Age Limit</title>
 
 <style>
 :root {
-  --purple: #6847d9;
-  --pink: #ff6cae;
-  --yellow: #ffd85e;
-  --blue: #6dd8f0;
-  --ink: #252244;
-  --paper: #fffaf2;
-  --muted: #69647e;
+  --purple:#6847d9;
+  --pink:#ff6cae;
+  --yellow:#ffd85e;
+  --blue:#6dd8f0;
+  --ink:#252244;
+  --paper:#fffaf2;
+  --muted:#69647e;
 }
 
-* {
-  box-sizing: border-box;
-}
+* {box-sizing:border-box;}
 
 html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 90px;
+  scroll-behavior:smooth;
+  scroll-padding-top:100px;
 }
 
 body {
-  margin: 0;
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-  font-family: Nunito, "Trebuchet MS", Arial, sans-serif;
-  color: var(--ink);
-  background: var(--paper);
-  line-height: 1.6;
+  margin:0;
+  width:100%;
+  max-width:100%;
+  overflow-x:hidden;
+  font-family:Nunito,"Trebuchet MS",Arial,sans-serif;
+  color:var(--ink);
+  background:var(--paper);
+  line-height:1.6;
 }
 
 img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+  display:block;
+  max-width:100%;
+  height:auto;
 }
 
-a {
-  overflow-wrap: anywhere;
-}
-
-/* ================= HEADER ================= */
+a {overflow-wrap:anywhere;}
 
 header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  width: 100%;
-  background: #fffdf8f2;
-  backdrop-filter: blur(8px);
-  border-bottom: 1px solid #eee7ff;
+  position:sticky;
+  top:0;
+  z-index:100;
+  width:100%;
+  background:#fffdf8f2;
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid #eee7ff;
 }
 
 .nav {
-  width: 100%;
-  max-width: 1180px;
-  margin: auto;
-  padding: 10px 16px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  flex-wrap: nowrap;
+  width:100%;
+  max-width:1180px;
+  margin:auto;
+  padding:10px 16px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  flex-wrap:nowrap;
 }
 
 .brand {
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  min-width: 0;
-  flex-shrink: 0;
-  color: var(--purple);
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 900;
-  white-space: nowrap;
+  display:flex;
+  align-items:center;
+  gap:9px;
+  min-width:0;
+  flex-shrink:0;
+  color:var(--purple);
+  text-decoration:none;
+  font-size:20px;
+  font-weight:900;
+  white-space:nowrap;
 }
 
 .brand img {
-  width: 40px !important;
-  height: 40px !important;
-  max-width: 40px !important;
-  object-fit: contain;
-  flex-shrink: 0;
+  width:40px!important;
+  height:40px!important;
+  max-width:40px!important;
+  object-fit:contain;
+  flex-shrink:0;
 }
 
-.brand span {
-  font-size: 20px;
-  font-weight: 900;
-}
-
-.header-trial {
-  flex-shrink: 0;
-  white-space: nowrap;
-}
+.brand span {font-size:20px;font-weight:900;}
 
 .nav-links {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  gap: 5px;
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  flex-wrap:wrap;
+  gap:5px;
 }
 
 .nav-links a {
-  color: var(--ink);
-  text-decoration: none;
-  font-size: 13px;
-  font-weight: 800;
-  padding: 7px 8px;
-  border-radius: 20px;
-  white-space: nowrap;
+  color:var(--ink);
+  text-decoration:none;
+  font-size:13px;
+  font-weight:800;
+  padding:7px 8px;
+  border-radius:20px;
+  white-space:nowrap;
 }
 
-.nav-links a:hover {
-  background: #f0eaff;
-}
-
-/* ================= BUTTONS ================= */
+.nav-links a:hover {background:#f0eaff;}
 
 .btn {
-  display: inline-block;
-  padding: 11px 17px;
-  border: 0;
-  border-radius: 999px;
-  background: var(--purple);
-  color: #fff !important;
-  text-decoration: none;
-  text-align: center;
-  font: inherit;
-  font-weight: 900;
-  cursor: pointer;
-  box-shadow: 0 5px 0 #4830a5;
-  transition: transform .15s ease;
+  display:inline-block;
+  padding:11px 17px;
+  border:0;
+  border-radius:999px;
+  background:var(--purple);
+  color:#fff!important;
+  text-decoration:none;
+  text-align:center;
+  font:inherit;
+  font-weight:900;
+  cursor:pointer;
+  box-shadow:0 5px 0 #4830a5;
+  transition:transform .15s ease;
 }
 
-.btn:hover {
-  transform: translateY(-2px);
-}
+.btn:hover {transform:translateY(-2px);}
 
-.btn.pink {
-  background: var(--pink);
-  box-shadow: 0 5px 0 #d94787;
-}
-
-.btn.yellow {
-  background: var(--yellow);
-  color: var(--ink) !important;
-  box-shadow: 0 5px 0 #d6ad35;
-}
-
-/* ================= COMMON ================= */
+.btn.pink {background:var(--pink);box-shadow:0 5px 0 #d94787;}
+.btn.yellow {background:var(--yellow);color:var(--ink)!important;box-shadow:0 5px 0 #d6ad35;}
 
 section {
-  width: 100%;
-  padding: 64px 20px;
-  scroll-margin-top: 85px;
+  width:100%;
+  padding:64px 20px;
+  scroll-margin-top:85px;
 }
 
-.container,
-.hero-inner,
-.footer-inner {
-  width: 100%;
-  max-width: 1120px;
-  margin: 0 auto;
+.container,.hero-inner,.footer-inner {
+  width:100%;
+  max-width:1120px;
+  margin:0 auto;
 }
 
-/* ================= HERO ================= */
+/* HERO */
 
 .hero {
-  overflow: hidden;
-  background: linear-gradient(120deg, #f5eaff, #e7faff 55%, #fff2d2);
-  padding-top: 65px;
-  padding-bottom: 60px;
+  overflow:hidden;
+  background:linear-gradient(120deg,#f5eaff,#e7faff 55%,#fff2d2);
+  padding-top:65px;
+  padding-bottom:60px;
 }
 
 .hero-inner {
-  display: grid;
-  grid-template-columns: 1.1fr .9fr;
-  gap: 35px;
-  align-items: center;
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:35px;
+  align-items:center;
 }
 
 .eyebrow {
-  display: inline-block;
-  padding: 6px 14px;
-  border: 2px dashed #c6b6ff;
-  border-radius: 999px;
-  background: #fff;
-  color: var(--purple);
-  font-weight: 900;
+  display:inline-block;
+  padding:6px 14px;
+  border:2px dashed #c6b6ff;
+  border-radius:999px;
+  background:#fff;
+  color:var(--purple);
+  font-weight:900;
 }
 
 h1 {
-  margin: 18px 0;
-  font-size: clamp(2.3rem, 5vw, 4.3rem);
-  line-height: 1.08;
-  letter-spacing: -1.5px;
+  margin:18px 0;
+  font-size:clamp(2.3rem,5vw,4.3rem);
+  line-height:1.08;
+  letter-spacing:-1.5px;
 }
 
-h1 span {
-  color: var(--pink);
-}
+h1 span {color:var(--pink);}
 
 .hero p {
-  max-width: 590px;
-  color: #55516f;
-  font-size: 1.08rem;
+  max-width:590px;
+  color:#55516f;
+  font-size:1.08rem;
 }
 
 .hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 13px;
-  margin-top: 22px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:13px;
+  margin-top:22px;
 }
 
-.tiny {
-  color: #77718b;
-  font-size: .85rem;
-}
+.tiny {color:#77718b;font-size:.85rem;}
 
 .art {
-  min-height: 330px;
-  position: relative;
-  display: grid;
-  place-items: center;
+  min-height:330px;
+  position:relative;
+  display:grid;
+  place-items:center;
 }
 
 .sun {
-  position: absolute;
-  width: min(280px, 75vw);
-  aspect-ratio: 1;
-  background: var(--yellow);
-  border-radius: 48% 52% 60% 40%;
-  transform: rotate(-12deg);
+  position:absolute;
+  width:min(280px,75vw);
+  aspect-ratio:1;
+  background:var(--yellow);
+  border-radius:48% 52% 60% 40%;
+  transform:rotate(-12deg);
 }
 
 .kid-card {
-  position: relative;
-  width: min(310px, 85%);
-  padding: 18px;
-  border: 5px solid #fff;
-  border-radius: 30px;
-  background: #fff;
-  text-align: center;
-  box-shadow: 0 18px 50px #392b751f;
-  transform: rotate(2deg);
+  position:relative;
+  width:min(310px,85%);
+  padding:18px;
+  border:5px solid #fff;
+  border-radius:30px;
+  background:#fff;
+  text-align:center;
+  box-shadow:0 18px 50px #392b751f;
+  transform:rotate(2deg);
 }
 
 .kid-card img {
-  width: 100%;
-  max-width: 250px;
-  margin: auto;
-  border-radius: 15px;
+  width:100%;
+  max-width:250px;
+  margin:auto;
+  border-radius:15px;
 }
 
 .kid-card strong {
-  display: block;
-  margin-top: 10px;
-  color: var(--purple);
-  font-size: 1.35rem;
+  display:block;
+  margin-top:10px;
+  color:var(--purple);
+  font-size:1.35rem;
 }
 
-.kid-card small {
-  color: #746d8e;
-  font-weight: 800;
-}
+.kid-card small {color:#746d8e;font-weight:800;}
 
 .float {
-  position: absolute;
-  z-index: 2;
-  padding: 10px 13px;
-  border-radius: 16px;
-  background: #fff;
-  font-weight: 900;
-  box-shadow: 0 10px 24px #392b7517;
+  position:absolute;
+  z-index:2;
+  padding:10px 13px;
+  border-radius:16px;
+  background:#fff;
+  font-weight:900;
+  box-shadow:0 10px 24px #392b7517;
 }
 
-.f1 {
-  top: 12px;
-  left: 0;
-  transform: rotate(-6deg);
-}
+.f1 {top:12px;left:0;transform:rotate(-6deg);}
+.f2 {right:0;bottom:22px;transform:rotate(5deg);}
 
-.f2 {
-  right: 0;
-  bottom: 22px;
-  transform: rotate(5deg);
-}
-
-/* ================= CLASSES ================= */
+/* COMMON CARDS */
 
 .section-head {
-  max-width: 720px;
-  margin: 0 auto 32px;
-  text-align: center;
+  max-width:720px;
+  margin:0 auto 32px;
+  text-align:center;
 }
 
-.section-head h2,
-.dsm-heading h2 {
-  margin: 0 0 10px;
-  font-size: clamp(2rem, 4vw, 2.8rem);
-  line-height: 1.2;
+.section-head h2,.dsm-heading h2 {
+  margin:0 0 10px;
+  font-size:clamp(2rem,4vw,2.8rem);
+  line-height:1.2;
 }
 
-.section-head p {
-  color: var(--muted);
-}
+.section-head p {color:var(--muted);}
 
 .cards {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:18px;
 }
 
 .card {
-  min-width: 0;
-  padding: 23px;
-  border: 1px solid #eee8ff;
-  border-radius: 22px;
-  background: #fff;
-  box-shadow: 0 10px 28px #392b7509;
+  min-width:0;
+  padding:23px;
+  border:1px solid #eee8ff;
+  border-radius:22px;
+  background:#fff;
+  box-shadow:0 10px 28px #392b7509;
 }
 
 .card-icon {
-  width: 56px;
-  height: 56px;
-  display: grid;
-  place-items: center;
-  border-radius: 17px;
-  background: #f0eaff;
-  font-size: 1.8rem;
+  width:56px;
+  height:56px;
+  display:grid;
+  place-items:center;
+  border-radius:17px;
+  background:#f0eaff;
+  font-size:1.8rem;
 }
 
-.card:nth-child(2) .card-icon {
-  background: #fff0f6;
+.card:nth-child(2) .card-icon {background:#fff0f6;}
+.card:nth-child(3) .card-icon {background:#e7faff;}
+
+.card h3 {margin:13px 0 7px;font-size:1.2rem;}
+.card p {margin:0;color:var(--muted);}
+
+/* AGE NO BAR */
+
+.age-section {
+  background:linear-gradient(135deg,#fff0f7,#f0eaff 50%,#e8faff);
+  text-align:center;
 }
 
-.card:nth-child(3) .card-icon {
-  background: #e7faff;
+.age-banner {
+  max-width:1000px;
+  margin:0 auto 30px;
+  padding:30px 22px;
+  border-radius:25px;
+  background:#fff;
+  box-shadow:0 10px 30px #392b7510;
 }
 
-.card h3 {
-  margin: 13px 0 7px;
-  font-size: 1.2rem;
+.age-banner h2 {
+  margin:0 0 10px;
+  color:var(--purple);
+  font-size:clamp(2rem,4vw,2.8rem);
+  line-height:1.2;
 }
 
-.card p {
-  margin: 0;
-  color: var(--muted);
+.age-banner h3 {
+  margin:10px 0;
+  color:#ed8b18;
+  font-size:1.4rem;
 }
 
-/* ================= WHATSAPP BAND ================= */
+.age-banner p {
+  max-width:800px;
+  margin:12px auto;
+  color:#55516f;
+}
+
+.age-highlight {
+  display:inline-block;
+  margin:12px 0;
+  padding:10px 18px;
+  border-radius:30px;
+  background:#fff2c7;
+  color:#6847d9;
+  font-weight:900;
+}
+
+.age-grid {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:17px;
+  max-width:1100px;
+  margin:auto;
+  text-align:left;
+}
+
+.age-card {
+  padding:22px;
+  border:1px solid #eee5ff;
+  border-radius:20px;
+  background:#fff;
+  box-shadow:0 8px 22px #392b7510;
+}
+
+.age-card .age-icon {
+  width:55px;
+  height:55px;
+  display:grid;
+  place-items:center;
+  border-radius:16px;
+  background:#f0eaff;
+  font-size:1.8rem;
+}
+
+.age-card h3 {margin:12px 0 6px;color:var(--purple);}
+.age-card p {margin:0;color:var(--muted);}
+
+.age-message {
+  max-width:850px;
+  margin:30px auto 20px;
+  padding:25px;
+  border-radius:20px;
+  background:#fff;
+  color:#44405f;
+}
+
+.age-message h3 {margin:0 0 8px;color:#ed8b18;}
+.age-message p {margin:0;}
+
+.age-tagline {
+  margin:20px 0;
+  color:#16834c;
+  font-size:1.25rem;
+  font-weight:900;
+}
+
+/* WHATSAPP BAND */
 
 .band {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 22px;
-  align-items: center;
-  padding: 35px;
-  border-radius: 28px;
-  background: var(--purple);
-  color: #fff;
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:22px;
+  align-items:center;
+  padding:35px;
+  border-radius:28px;
+  background:var(--purple);
+  color:#fff;
 }
 
 .band h2 {
-  margin: 0 0 8px;
-  font-size: clamp(1.7rem, 3vw, 2.2rem);
-  line-height: 1.2;
+  margin:0 0 8px;
+  font-size:clamp(1.7rem,3vw,2.2rem);
+  line-height:1.2;
 }
 
-.band p {
-  margin: 0;
-  color: #e8e1ff;
-}
+.band p {margin:0;color:#e8e1ff;}
 
-/* ================= ABOUT ================= */
-
-.about-grid {
-  display: grid;
-  grid-template-columns: .8fr 1.2fr;
-  gap: 30px;
-  align-items: center;
-}
-
-.coach-art {
-  min-height: 280px;
-  padding: 24px;
-  display: grid;
-  place-items: center;
-  border-radius: 28px;
-  background: linear-gradient(135deg, #ffebf4, #e6f9ff);
-  text-align: center;
-}
-
-.coach-art img {
-  width: 100%;
-  max-width: 250px;
-  margin: auto;
-  border-radius: 15px;
-}
-
-.coach-art strong {
-  display: block;
-  margin-top: 10px;
-  color: var(--purple);
-  font-size: 1.4rem;
-}
-
-.about h2 {
-  margin: 10px 0;
-  font-size: clamp(2rem, 4vw, 2.5rem);
-  line-height: 1.2;
-}
-
-.check {
-  padding-left: 0;
-  list-style: none;
-}
-
-.check li {
-  margin: 9px 0;
-  font-weight: 800;
-}
-
-.check li::before {
-  content: "✓";
-  margin-right: 10px;
-  color: #2cae85;
-  font-weight: 1000;
-}
-
-/* ================= WELCOME ================= */
+/* WELCOME */
 
 .welcome-section {
-  background: linear-gradient(135deg, #eaf8ff, #fff5e8);
-  text-align: center;
+  background:linear-gradient(135deg,#eaf8ff,#fff5e8);
+  text-align:center;
 }
 
 .welcome-section h2 {
-  margin: 0 0 8px;
-  color: #0879b9;
-  font-size: clamp(1.8rem, 4vw, 2.3rem);
+  margin:0 0 8px;
+  color:#0879b9;
+  font-size:clamp(1.8rem,4vw,2.3rem);
 }
 
-.welcome-section h3 {
-  margin: 8px 0;
-  color: #ed8b18;
-  font-size: 1.35rem;
-}
+.welcome-section h3 {margin:8px 0;color:#ed8b18;font-size:1.35rem;}
 
 .welcome-intro {
-  max-width: 760px;
-  margin: 15px auto 28px;
-  color: #444;
+  max-width:760px;
+  margin:15px auto 28px;
+  color:#444;
 }
 
 .feature-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 17px;
-  max-width: 1100px;
-  margin: auto;
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:17px;
+  max-width:1100px;
+  margin:auto;
 }
 
 .feature-card {
-  padding: 21px 16px;
-  border-radius: 16px;
-  border-bottom: 4px solid #19a6d5;
-  background: #fff;
-  box-shadow: 0 4px 14px #00000012;
+  padding:21px 16px;
+  border-radius:16px;
+  border-bottom:4px solid #19a6d5;
+  background:#fff;
+  box-shadow:0 4px 14px #00000012;
 }
 
-.feature-card .emoji {
-  font-size: 2.2rem;
-}
-
-.feature-card h4 {
-  margin: 10px 0;
-  color: #0879b9;
-  font-size: 1.15rem;
-}
-
-.feature-card p {
-  margin: 0;
-  color: #555;
-}
+.feature-card .emoji {font-size:2.2rem;}
+.feature-card h4 {margin:10px 0;color:#0879b9;font-size:1.15rem;}
+.feature-card p {margin:0;color:#555;}
 
 .welcome-message {
-  margin: 28px auto 15px;
-  color: #16834c;
-  font-size: 1.2rem;
-  font-weight: 900;
+  margin:28px auto 15px;
+  color:#16834c;
+  font-size:1.2rem;
+  font-weight:900;
 }
 
 .admission {
-  max-width: 650px;
-  margin: 22px auto 0;
-  padding: 24px 16px;
-  border-radius: 16px;
-  background: #0879b9;
-  color: #fff;
+  max-width:650px;
+  margin:22px auto 0;
+  padding:24px 16px;
+  border-radius:16px;
+  background:#0879b9;
+  color:#fff;
 }
 
-.admission h2 {
-  color: #fff;
-}
-
-.admission h3 {
-  color: #ffdf75;
-}
+.admission h2 {color:#fff;}
+.admission h3 {color:#ffdf75;}
 
 .admission a {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 12px 23px;
-  border-radius: 30px;
-  background: #20b96c;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 900;
+  display:inline-block;
+  margin-top:10px;
+  padding:12px 23px;
+  border-radius:30px;
+  background:#20b96c;
+  color:#fff;
+  text-decoration:none;
+  font-weight:900;
 }
 
-/* ================= WHY KUKU KIDS CARE ================= */
+/* WHY KUKU */
 
 .why-kuku-section {
-  background: linear-gradient(135deg, #fff0f7, #f0eaff 50%, #e8faff);
-  text-align: center;
+  background:linear-gradient(135deg,#fff0f7,#f0eaff 50%,#e8faff);
+  text-align:center;
 }
 
-.why-kuku-section .section-head {
-  max-width: 790px;
-}
-
-.why-kuku-section .section-head h2 {
-  color: #6847d9;
-}
+.why-kuku-section .section-head {max-width:790px;}
+.why-kuku-section .section-head h2 {color:#6847d9;}
 
 .why-kuku-intro {
-  max-width: 780px;
-  margin: 15px auto 30px;
-  color: #55516f;
-  font-size: 1.05rem;
+  max-width:780px;
+  margin:15px auto 30px;
+  color:#55516f;
+  font-size:1.05rem;
 }
 
 .why-kuku-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
-  max-width: 1100px;
-  margin: auto;
-  text-align: left;
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:18px;
+  max-width:1100px;
+  margin:auto;
+  text-align:left;
 }
 
 .why-kuku-card {
-  min-width: 0;
-  padding: 23px 20px;
-  border: 1px solid #eee5ff;
-  border-radius: 20px;
-  background: #fff;
-  box-shadow: 0 8px 22px #392b7510;
-  transition: transform .2s ease;
+  min-width:0;
+  padding:23px 20px;
+  border:1px solid #eee5ff;
+  border-radius:20px;
+  background:#fff;
+  box-shadow:0 8px 22px #392b7510;
+  transition:transform .2s ease;
 }
 
-.why-kuku-card:hover {
-  transform: translateY(-4px);
-}
+.why-kuku-card:hover {transform:translateY(-4px);}
 
 .why-kuku-icon {
-  width: 55px;
-  height: 55px;
-  display: grid;
-  place-items: center;
-  border-radius: 16px;
-  background: #f0eaff;
-  font-size: 1.8rem;
+  width:55px;
+  height:55px;
+  display:grid;
+  place-items:center;
+  border-radius:16px;
+  background:#f0eaff;
+  font-size:1.8rem;
 }
 
-.why-kuku-card:nth-child(2) .why-kuku-icon {
-  background: #fff0f6;
-}
+.why-kuku-card:nth-child(2) .why-kuku-icon {background:#fff0f6;}
+.why-kuku-card:nth-child(3) .why-kuku-icon {background:#e7faff;}
 
-.why-kuku-card:nth-child(3) .why-kuku-icon {
-  background: #e7faff;
-}
-
-.why-kuku-card h3 {
-  margin: 13px 0 7px;
-  color: #6847d9;
-  font-size: 1.15rem;
-}
-
-.why-kuku-card p {
-  margin: 0;
-  color: #69647e;
-}
+.why-kuku-card h3 {margin:13px 0 7px;color:#6847d9;font-size:1.15rem;}
+.why-kuku-card p {margin:0;color:#69647e;}
 
 .why-kuku-message {
-  max-width: 850px;
-  margin: 30px auto 18px;
-  padding: 24px;
-  border-radius: 20px;
-  background: #fff;
-  color: #44405f;
-  box-shadow: 0 8px 22px #392b7510;
+  max-width:850px;
+  margin:30px auto 18px;
+  padding:24px;
+  border-radius:20px;
+  background:#fff;
+  color:#44405f;
+  box-shadow:0 8px 22px #392b7510;
 }
 
-.why-kuku-message h3 {
-  margin: 0 0 8px;
-  color: #ed8b18;
-  font-size: 1.35rem;
-}
-
-.why-kuku-message p {
-  margin: 0;
-}
+.why-kuku-message h3 {margin:0 0 8px;color:#ed8b18;font-size:1.35rem;}
+.why-kuku-message p {margin:0;}
 
 .why-kuku-bottom {
-  margin: 22px 0;
-  color: #16834c;
-  font-size: 1.25rem;
-  font-weight: 900;
+  margin:22px 0;
+  color:#16834c;
+  font-size:1.25rem;
+  font-weight:900;
 }
 
-/* ================= PHOTO ================= */
+/* PHOTO */
 
 .photo-section {
-  padding-top: 35px;
-  padding-bottom: 35px;
-  background: #fff8e8;
-  text-align: center;
+  padding-top:35px;
+  padding-bottom:35px;
+  background:#fff8e8;
+  text-align:center;
 }
 
 .photo-card {
-  max-width: 850px;
-  margin: auto;
-  padding: 15px;
-  border-radius: 18px;
-  background: #fff;
-  box-shadow: 0 4px 15px #0000001f;
+  max-width:850px;
+  margin:auto;
+  padding:15px;
+  border-radius:18px;
+  background:#fff;
+  box-shadow:0 4px 15px #0000001f;
 }
 
-.photo-card img {
-  width: 100%;
-  border-radius: 14px;
+.photo-card img {width:100%;border-radius:14px;}
+.photo-card h2 {margin:15px 0 5px;color:#ff7b00;}
+
+/* ABOUT */
+
+.about-grid {
+  display:grid;
+  grid-template-columns:.8fr 1.2fr;
+  gap:30px;
+  align-items:center;
 }
 
-.photo-card h2 {
-  margin: 15px 0 5px;
-  color: #ff7b00;
+.coach-art {
+  min-height:280px;
+  padding:24px;
+  display:grid;
+  place-items:center;
+  border-radius:28px;
+  background:linear-gradient(135deg,#ffebf4,#e6f9ff);
+  text-align:center;
 }
 
-/* ================= POSTER ================= */
+.coach-art img {
+  width:100%;
+  max-width:250px;
+  margin:auto;
+  border-radius:15px;
+}
+
+.coach-art strong {
+  display:block;
+  margin-top:10px;
+  color:var(--purple);
+  font-size:1.4rem;
+}
+
+.about h2 {
+  margin:10px 0;
+  font-size:clamp(2rem,4vw,2.5rem);
+  line-height:1.2;
+}
+
+.check {padding-left:0;list-style:none;}
+.check li {margin:9px 0;font-weight:800;}
+.check li::before {content:"✓";margin-right:10px;color:#2cae85;font-weight:1000;}
+
+/* POSTER */
 
 .poster-section {
-  padding: 28px 12px;
-  background: #f0f8ff;
-  text-align: center;
+  padding:28px 12px;
+  background:#f0f8ff;
+  text-align:center;
 }
 
 .poster-section img {
-  width: 100%;
-  max-width: 650px;
-  margin: auto;
-  border-radius: 12px;
+  width:100%;
+  max-width:650px;
+  margin:auto;
+  border-radius:12px;
 }
 
 .poster-book-btn {
-  display: inline-block;
-  margin-top: 17px;
-  padding: 12px 24px;
-  border-radius: 25px;
-  background: #ff1744;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 900;
+  display:inline-block;
+  margin-top:17px;
+  padding:12px 24px;
+  border-radius:25px;
+  background:#ff1744;
+  color:#fff;
+  text-decoration:none;
+  font-weight:900;
 }
 
-/* ================= FREE TRIAL ================= */
+/* FREE TRIAL */
 
 .trial-wrap {
-  border-radius: 28px;
-  padding: 30px;
-  background: linear-gradient(120deg, #fff0f6, #f0eaff);
+  border-radius:28px;
+  padding:30px;
+  background:linear-gradient(120deg,#fff0f6,#f0eaff);
 }
 
 .trial-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  align-items: center;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:30px;
+  align-items:center;
 }
 
 .trial h2 {
-  margin: 10px 0;
-  font-size: clamp(1.9rem, 4vw, 2.4rem);
-  line-height: 1.2;
+  margin:10px 0;
+  font-size:clamp(1.9rem,4vw,2.4rem);
+  line-height:1.2;
 }
 
 .form {
-  padding: 22px;
-  border-radius: 22px;
-  background: #fff;
-  box-shadow: 0 12px 30px #392b7510;
+  padding:22px;
+  border-radius:22px;
+  background:#fff;
+  box-shadow:0 12px 30px #392b7510;
 }
 
-.form label {
-  display: block;
-  margin: 11px 0 5px;
-  font-weight: 900;
+.form label {display:block;margin:11px 0 5px;font-weight:900;}
+
+.form input,.form select,.form textarea {
+  width:100%;
+  min-width:0;
+  padding:11px 12px;
+  border:1.5px solid #e0d9f6;
+  border-radius:11px;
+  background:#fffdfd;
+  font:inherit;
 }
 
-.form input,
-.form select,
-.form textarea {
-  width: 100%;
-  min-width: 0;
-  padding: 11px 12px;
-  border: 1.5px solid #e0d9f6;
-  border-radius: 11px;
-  background: #fffdfd;
-  font: inherit;
+.form input:focus,.form select:focus,.form textarea:focus {
+  outline:3px solid #e6ddff;
+  border-color:var(--purple);
 }
 
-.form input:focus,
-.form select:focus,
-.form textarea:focus {
-  outline: 3px solid #e6ddff;
-  border-color: var(--purple);
-}
+.form button {width:100%;margin-top:17px;font:inherit;font-weight:900;}
 
-.form button {
-  width: 100%;
-  margin-top: 17px;
-  font: inherit;
-  font-weight: 900;
-}
+/* DIGITAL SKILLS */
 
-/* ================= DIGITAL SKILLS ================= */
-
-.dsm-section {
-  background: linear-gradient(135deg, #f0f9ff, #fff7ed);
-}
+.dsm-section {background:linear-gradient(135deg,#f0f9ff,#fff7ed);}
 
 .dsm-heading {
-  max-width: 740px;
-  margin: 0 auto 32px;
-  text-align: center;
+  max-width:740px;
+  margin:0 auto 32px;
+  text-align:center;
 }
 
 .dsm-tag {
-  display: inline-block;
-  padding: 7px 13px;
-  border-radius: 30px;
-  background: #dbeafe;
-  color: #075985;
-  font-size: 12px;
-  font-weight: 900;
-  letter-spacing: 1px;
+  display:inline-block;
+  padding:7px 13px;
+  border-radius:30px;
+  background:#dbeafe;
+  color:#075985;
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:1px;
 }
 
-.dsm-heading h2 {
-  margin-top: 13px;
-  color: #12305a;
-}
-
-.dsm-heading p {
-  color: #536477;
-}
+.dsm-heading h2 {margin-top:13px;color:#12305a;}
+.dsm-heading p {color:#536477;}
 
 .dsm-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 19px;
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:19px;
 }
 
 .dsm-card {
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 23px 20px;
-  border: 1px solid #e0eaf5;
-  border-radius: 17px;
-  background: #fff;
-  box-shadow: 0 7px 22px #19375a14;
+  min-width:0;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  padding:23px 20px;
+  border:1px solid #e0eaf5;
+  border-radius:17px;
+  background:#fff;
+  box-shadow:0 7px 22px #19375a14;
 }
 
 .dsm-icon {
-  width: 55px;
-  height: 55px;
-  display: grid;
-  place-items: center;
-  border-radius: 15px;
-  background: #eaf4ff;
-  font-size: 1.8rem;
+  width:55px;
+  height:55px;
+  display:grid;
+  place-items:center;
+  border-radius:15px;
+  background:#eaf4ff;
+  font-size:1.8rem;
 }
 
-.dsm-card h3 {
-  margin: 15px 0 8px;
-  color: #17345b;
-  font-size: 1.2rem;
-}
+.dsm-card h3 {margin:15px 0 8px;color:#17345b;font-size:1.2rem;}
+.dsm-card p {flex-grow:1;margin:0 0 14px;color:#596779;font-size:.92rem;}
 
-.dsm-card p {
-  flex-grow: 1;
-  margin: 0 0 14px;
-  color: #596779;
-  font-size: .92rem;
-}
-
-.dsm-btn {
-  padding: 8px 0;
-  color: #075985;
-  text-decoration: none;
-  font-weight: 900;
-}
+.dsm-btn {padding:8px 0;color:#075985;text-decoration:none;font-weight:900;}
 
 .dsm-bottom {
-  margin-top: 35px;
-  padding: 25px 16px;
-  border-radius: 17px;
-  background: #12305a;
-  color: #fff;
-  text-align: center;
+  margin-top:35px;
+  padding:25px 16px;
+  border-radius:17px;
+  background:#12305a;
+  color:#fff;
+  text-align:center;
 }
 
-.dsm-bottom h3 {
-  margin: 0 0 8px;
-  font-size: 1.5rem;
-}
+.dsm-bottom h3 {margin:0 0 8px;font-size:1.5rem;}
 
 .dsm-main-btn {
-  display: inline-block;
-  margin-top: 8px;
-  padding: 12px 22px;
-  border-radius: 30px;
-  background: #fbbf24;
-  color: #17345b;
-  text-decoration: none;
-  font-weight: 900;
+  display:inline-block;
+  margin-top:8px;
+  padding:12px 22px;
+  border-radius:30px;
+  background:#fbbf24;
+  color:#17345b;
+  text-decoration:none;
+  font-weight:900;
 }
 
-/* ================= FOOTER ================= */
+/* FOOTER */
 
-footer {
-  padding: 35px 20px;
-  background: #24203f;
-  color: #fff;
-}
+footer {padding:35px 20px;background:#24203f;color:#fff;}
 
 .footer-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:20px;
 }
 
-.footer-inner p {
-  margin: 4px 0;
-  color: #d5d0e8;
-}
+.footer-inner p {margin:4px 0;color:#d5d0e8;}
+.footer-inner a {color:#ffe17d;}
+.footer-brand {color:#fff;font-size:1.25rem;font-weight:900;}
 
-.footer-inner a {
-  color: #ffe17d;
-}
-
-.footer-brand {
-  color: #fff;
-  font-size: 1.25rem;
-  font-weight: 900;
-}
-
-/* ================= FLOATING WHATSAPP ================= */
+/* FLOATING WHATSAPP */
 
 .whatsapp {
-  position: fixed;
-  right: 16px;
-  bottom: 16px;
-  z-index: 150;
-  max-width: calc(100% - 32px);
-  padding: 12px 16px;
-  border-radius: 999px;
-  background: #20bf68;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 900;
-  box-shadow: 0 8px 22px #0003;
+  position:fixed;
+  right:16px;
+  bottom:16px;
+  z-index:150;
+  max-width:calc(100% - 32px);
+  padding:12px 16px;
+  border-radius:999px;
+  background:#20bf68;
+  color:#fff;
+  text-decoration:none;
+  font-weight:900;
+  box-shadow:0 8px 22px #0003;
 }
 
-/* ================= TABLET ================= */
+/* TABLET */
 
-@media (max-width: 900px) {
-  .hero-inner,
-  .about-grid,
-  .trial-grid {
-    grid-template-columns: 1fr;
+@media(max-width:900px) {
+  .hero-inner,.about-grid,.trial-grid {grid-template-columns:1fr;}
+
+  .cards,.feature-grid,.dsm-grid,.why-kuku-grid,.age-grid {
+    grid-template-columns:repeat(2,minmax(0,1fr));
   }
 
-  .cards,
-  .feature-grid,
-  .dsm-grid,
-  .why-kuku-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
+  .band {grid-template-columns:1fr;}
+  .hero-inner {gap:12px;}
+  .nav {flex-wrap:wrap;}
+  .nav-links {width:100%;justify-content:center;}
+}
 
-  .band {
-    grid-template-columns: 1fr;
-  }
+/* MOBILE */
 
-  .hero-inner {
-    gap: 12px;
-  }
+@media(max-width:600px) {
+  html {scroll-padding-top:115px;}
 
-  .nav {
-    flex-wrap: wrap;
-  }
+  .nav {padding:9px 11px;flex-wrap:wrap;gap:10px;}
+
+  .brand {font-size:16px;gap:5px;}
+  .brand img {width:34px!important;height:34px!important;}
+  .brand span {font-size:16px;}
+
+  .header-trial {font-size:12px;padding:8px 11px;}
 
   .nav-links {
-    width: 100%;
-    justify-content: center;
+    width:100%;
+    justify-content:center;
+    gap:4px;
+    flex-wrap:wrap;
   }
+
+  .nav-links a {padding:6px 7px;font-size:12px;}
+
+  section {padding:43px 14px;}
+  .hero {padding:38px 14px;}
+
+  h1 {font-size:clamp(30px,9vw,42px);}
+  .hero p {font-size:1rem;}
+  .art {min-height:275px;}
+
+  .float {padding:8px 10px;font-size:12px;}
+
+  .cards,.feature-grid,.dsm-grid,.why-kuku-grid,.age-grid {
+    grid-template-columns:1fr;
+    gap:14px;
+  }
+
+  .card,.dsm-card,.why-kuku-card,.age-card {padding:19px;}
+
+  .band {padding:24px 18px;}
+  .trial-wrap {padding:17px;}
+  .form {padding:16px;}
+
+  .footer-inner {align-items:flex-start;flex-direction:column;}
+
+  .section-head,.dsm-heading {text-align:left;}
+  .age-banner {padding:24px 16px;}
 }
 
-/* ================= MOBILE ================= */
+/* SMALL MOBILE */
 
-@media (max-width: 600px) {
+@media(max-width:360px) {
+  .brand {font-size:14px;}
+  .brand img {width:29px!important;height:29px!important;}
+  .brand span {font-size:14px;}
 
-  html {
-    scroll-padding-top: 115px;
-  }
+  .nav-links a {font-size:11px;padding:5px 6px;}
 
-  .nav {
-    padding: 9px 11px;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
+  .btn {padding:9px 11px;font-size:13px;}
 
-  .brand {
-    font-size: 16px;
-    gap: 5px;
-  }
-
-  .brand img {
-    width: 34px !important;
-    height: 34px !important;
-  }
-
-  .brand span {
-    font-size: 16px;
-  }
-
-  .header-trial {
-    font-size: 12px;
-    padding: 8px 11px;
-  }
-
-  .nav-links {
-    width: 100%;
-    justify-content: center;
-    gap: 4px;
-    flex-wrap: wrap;
-  }
-
-  .nav-links a {
-    padding: 6px 7px;
-    font-size: 12px;
-  }
-
-  section {
-    padding: 43px 14px;
-  }
-
-  .hero {
-    padding: 38px 14px;
-  }
-
-  h1 {
-    font-size: clamp(30px, 9vw, 42px);
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-
-  .art {
-    min-height: 275px;
-  }
-
-  .float {
-    padding: 8px 10px;
-    font-size: 12px;
-  }
-
-  .cards,
-  .feature-grid,
-  .dsm-grid,
-  .why-kuku-grid {
-    grid-template-columns: 1fr;
-    gap: 14px;
-  }
-
-  .card,
-  .dsm-card,
-  .why-kuku-card {
-    padding: 19px;
-  }
-
-  .band {
-    padding: 24px 18px;
-  }
-
-  .trial-wrap {
-    padding: 17px;
-  }
-
-  .form {
-    padding: 16px;
-  }
-
-  .footer-inner {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
-  .section-head,
-  .dsm-heading {
-    text-align: left;
-  }
+  .f1 {left:-4px;}
+  .f2 {right:-4px;}
 }
-
-/* ================= SMALL MOBILE ================= */
-
-@media (max-width: 360px) {
-
-  .brand {
-    font-size: 14px;
-  }
-
-  .brand img {
-    width: 29px !important;
-    height: 29px !important;
-  }
-
-  .brand span {
-    font-size: 14px;
-  }
-
-  .nav-links a {
-    font-size: 11px;
-    padding: 5px 6px;
-  }
-
-  .btn {
-    padding: 9px 11px;
-    font-size: 13px;
-  }
-
-  .f1 {
-    left: -4px;
-  }
-
-  .f2 {
-    right: -4px;
-  }
-}
-
 </style>
 </head>
 
 <body>
 
-<!-- ================= HEADER ================= -->
+<!-- HEADER -->
 
 <header>
   <div class="nav">
@@ -1102,6 +910,7 @@ footer {
     <nav class="nav-links">
       <a href="#home">Home</a>
       <a href="#classes">Classes</a>
+      <a href="#age-no-bar">All Ages</a>
       <a href="#why-choose-us">Why Us</a>
       <a href="#why-kuku">Why KuKu</a>
       <a href="#about">Coach</a>
@@ -1113,7 +922,7 @@ footer {
 
 <main>
 
-<!-- ================= HOME ================= -->
+<!-- HOME -->
 
 <section class="hero" id="home">
   <div class="hero-inner">
@@ -1121,11 +930,12 @@ footer {
     <div>
       <span class="eyebrow">✨ Learn • Speak • Shine</span>
 
-      <h1>English learning can be <span>fun!</span></h1>
+      <h1>Learning has no <span>age limit!</span></h1>
 
       <p>
-        A happy learning space where children build English speaking confidence,
-        reading skills and creativity through playful activities.
+        A happy learning platform for everyone!
+        Improve your English, develop computer skills,
+        explore technology and build confidence at every stage of life.
       </p>
 
       <div class="hero-actions">
@@ -1140,36 +950,22 @@ footer {
 
     <div class="art">
       <div class="sun"></div>
-      <div class="float f1">🔤 Phonics Fun</div>
+      <div class="float f1">🔤 Learn Something New</div>
 
       <div class="kid-card">
         <img src="file_000000001a1c821182f0b49c0ff533ea.jpg"
              alt="Happy student at KuKu Kids Care">
-        <strong>Little Learners</strong>
-        <small>Big confidence, one word at a time!</small>
+        <strong>Learners of All Ages</strong>
+        <small>Big dreams, bright futures!</small>
       </div>
 
-      <div class="float f2">⭐ Speak with confidence</div>
+      <div class="float f2">⭐ Grow with Confidence</div>
     </div>
 
   </div>
 </section>
 
-<!-- ================= CLASSES ================= -->
-
-<section id="classes">
-  <div class="container">
-
-    <div class="section-head">
-      <h2>Learning that feels like play</h2>
-      <p>
-        Friendly lessons, fun practice and small steps that help children
-        learn with confidence.
-      </p>
-    </div>
-
-    
-<!-- ================= CLASSES ================= -->
+<!-- COURSES -->
 
 <section id="classes">
   <div class="container">
@@ -1179,7 +975,7 @@ footer {
       <p>
         Learn new skills, build confidence and prepare for a brighter future.
         KuKu Kids Care offers practical and engaging learning programs
-        for children, students and beginners.
+        for children, students and adult learners.
       </p>
     </div>
 
@@ -1189,10 +985,10 @@ footer {
         <div class="card-icon">🗣️</div>
         <h3>1. Spoken English</h3>
         <p>
-          Improve your English communication through daily conversations,
+          Improve English communication through daily conversations,
           vocabulary building, sentence formation, pronunciation and
-          speaking practice. Develop confidence to communicate in English
-          in everyday situations.
+          speaking practice. Develop confidence to communicate in
+          everyday situations.
         </p>
       </article>
 
@@ -1211,10 +1007,9 @@ footer {
         <div class="card-icon">📈</div>
         <h3>3. Digital Marketing</h3>
         <p>
-          Explore the world of online marketing. Learn social media
-          marketing, content creation, SEO basics, Google Ads,
-          Facebook and Instagram marketing, YouTube marketing
-          and digital promotion strategies.
+          Explore online marketing. Learn social media marketing,
+          content creation, SEO basics, Google Ads, Facebook and
+          Instagram marketing, YouTube marketing and digital promotion.
         </p>
       </article>
 
@@ -1222,10 +1017,9 @@ footer {
         <div class="card-icon">🤖</div>
         <h3>4. Artificial Intelligence (AI)</h3>
         <p>
-          Discover how Artificial Intelligence works and explore
-          beginner-friendly AI tools. Learn AI-assisted writing,
-          content ideas, presentations, image concepts and
-          responsible use of AI for learning and creativity.
+          Discover Artificial Intelligence and beginner-friendly AI tools.
+          Learn AI-assisted writing, content ideas, presentations,
+          creative projects and responsible use of AI for learning.
         </p>
       </article>
 
@@ -1235,8 +1029,7 @@ footer {
         <p>
           Understand basic accounting concepts and learn Tally,
           company creation, ledger management, voucher entries,
-          sales and purchase entries, GST basics and financial reports
-          through practical examples.
+          sales and purchase entries, GST basics and financial reports.
         </p>
       </article>
 
@@ -1246,8 +1039,7 @@ footer {
         <p>
           Prepare for interviews with confidence. Learn resume writing,
           self-introduction, common interview questions, communication
-          skills, professional behaviour, body language and presentation
-          techniques.
+          skills, professional behaviour, body language and presentation.
         </p>
       </article>
 
@@ -1255,10 +1047,10 @@ footer {
         <div class="card-icon">🌐</div>
         <h3>7. Website Building & Coding</h3>
         <p>
-          Learn how websites are created using HTML and CSS.
+          Learn website creation using HTML and CSS.
           Explore programming fundamentals with Java and C++,
-          understand website layouts, basic coding concepts
-          and responsive website design through practical projects.
+          website layouts, coding concepts and responsive design
+          through practical projects.
         </p>
       </article>
 
@@ -1275,7 +1067,7 @@ footer {
 
     </div>
 
-    <div style="text-align:center; margin-top:32px;">
+    <div style="text-align:center;margin-top:32px;">
       <h3 style="color:#6847d9;">
         Learn Today. Build Skills for Tomorrow!
       </h3>
@@ -1292,20 +1084,162 @@ footer {
   </div>
 </section>
 
+<!-- AGE NO BAR SECTION -->
 
-<!-- ================= WHATSAPP BAND ================= -->
+<section class="age-section" id="age-no-bar">
+
+  <div class="container">
+
+    <div class="age-banner">
+
+      <span class="eyebrow">🌟 Everyone Is Welcome</span>
+
+      <h2>AGE IS NO BAR FOR LEARNING!</h2>
+
+      <h3>Learning Has No Age Limit – Your Future Starts Here!</h3>
+
+      <p>
+        At KuKu Kids Care, we believe that knowledge has no age limit.
+        Learning is a lifelong journey, and anyone can start at any
+        stage of life.
+      </p>
+
+      <p>
+        Whether you are a Pre-Nursery student, a school-going child,
+        a college student, a graduate, a postgraduate or a working
+        professional, KuKu Kids Care welcomes everyone who wants
+        to learn, grow and achieve something in life.
+      </p>
+
+      <div class="age-highlight">
+        From Pre-Nursery to Post-Graduation – Everyone Is Welcome!
+      </div>
+
+    </div>
+
+    <div class="section-head">
+      <h2>🎓 Learning Opportunities for Every Age</h2>
+      <p>
+        Different learners have different goals.
+        That's why we provide separate learning groups according
+        to age, educational level, learning needs and course requirements.
+      </p>
+    </div>
+
+    <div class="age-grid">
+
+      <article class="age-card">
+        <div class="age-icon">🧸</div>
+        <h3>1. Pre-Nursery & Young Kids</h3>
+        <p>
+          Fun-based learning, phonics, alphabet recognition,
+          vocabulary, basic English, rhymes, storytelling
+          and creative activities.
+        </p>
+      </article>
+
+      <article class="age-card">
+        <div class="age-icon">🎒</div>
+        <h3>2. School Students</h3>
+        <p>
+          Spoken English, grammar, reading, writing,
+          communication skills, computer basics,
+          creativity and personality development.
+        </p>
+      </article>
+
+      <article class="age-card">
+        <div class="age-icon">🎓</div>
+        <h3>3. College Students</h3>
+        <p>
+          English communication, Advanced Excel,
+          computer skills, AI awareness, digital marketing,
+          coding and career preparation.
+        </p>
+      </article>
+
+      <article class="age-card">
+        <div class="age-icon">📚</div>
+        <h3>4. Graduates & Postgraduates</h3>
+        <p>
+          Professional communication, computer applications,
+          Tally, Digital Marketing, AI tools, website building
+          and interview preparation.
+        </p>
+      </article>
+
+      <article class="age-card">
+        <div class="age-icon">💼</div>
+        <h3>5. Job Seekers & Professionals</h3>
+        <p>
+          Interview preparation, resume writing, spoken English,
+          personality development, workplace communication
+          and practical digital skills.
+        </p>
+      </article>
+
+      <article class="age-card">
+        <div class="age-icon">🌱</div>
+        <h3>6. Adult & Lifelong Learners</h3>
+        <p>
+          Anyone who wants to improve English, learn computers,
+          explore technology or develop a new skill is welcome.
+          It is never too late to learn!
+        </p>
+      </article>
+
+    </div>
+
+    <div class="age-message">
+      <h3>💜 Separate Learning Groups for Every Learner</h3>
+
+      <p>
+        We understand that a young child, a school student,
+        a college learner and an adult have different learning needs.
+        Therefore, students will be grouped according to their age,
+        educational level, course and learning requirements.
+        Everyone gets an appropriate learning environment and guidance.
+      </p>
+    </div>
+
+    <div class="age-tagline">
+      YOUR AGE DOESN'T DEFINE YOUR FUTURE!
+    </div>
+
+    <h3>Let's Learn Together, Grow Together & Build Our Future Together!</h3>
+
+    <p>
+      Whether you are 5 or 50, it's never too late to learn something new.
+      Come and take the first step towards a brighter, smarter
+      and more confident future.
+    </p>
+
+    <p><strong>🌟 KuKu Kids Care – Empowering Every Learner, At Every Age!</strong></p>
+
+    <a href="#trial" class="btn pink">
+      🚀 Start Your Learning Journey
+    </a>
+
+  </div>
+
+</section>
+
+<!-- WHATSAPP BAND -->
 
 <section>
   <div class="container">
     <div class="band">
 
       <div>
-        <h2>Small steps today. Confident speakers tomorrow!</h2>
-        <p>Ask us about class timings and the best learning option for your child.</p>
+        <h2>Small Steps Today. A Brighter Future Tomorrow!</h2>
+        <p>
+          Ask us about class timings and the best learning option
+          for your age and learning goals.
+        </p>
       </div>
 
       <a class="btn yellow"
-         href="https://wa.me/918810397239?text=Hello%20KuKu%20Kids%20Care%2C%20I%20want%20to%20know%20about%20English%20classes."
+         href="https://wa.me/918810397239?text=Hello%20KuKu%20Kids%20Care%2C%20I%20want%20to%20know%20about%20your%20courses."
          target="_blank" rel="noopener">
         Chat on WhatsApp ↗
       </a>
@@ -1314,19 +1248,19 @@ footer {
   </div>
 </section>
 
-<!-- ================= WHY US ================= -->
+<!-- WHY US -->
 
 <section class="welcome-section" id="why-choose-us">
   <div class="container">
 
     <h2>🌈 Welcome to KuKu Kids Care</h2>
-    <h3>The Right Platform for Your Child!</h3>
+    <h3>The Right Platform for Every Learner!</h3>
 
     <p class="welcome-intro">
-      Every Child is Special. Every Child Deserves to Shine!
-      At KuKu Kids Care, we make learning English easy, enjoyable and creative.
-      Our mission is to help every child develop communication skills,
-      creativity and confidence.
+      Every Learner Is Special. Everyone Deserves to Shine!
+      At KuKu Kids Care, we make learning English easy, enjoyable
+      and creative. Our mission is to help learners develop
+      communication skills, creativity and confidence.
     </p>
 
     <div class="feature-grid">
@@ -1376,7 +1310,7 @@ footer {
     <div class="admission">
       <h2>🎓 ADMISSIONS OPEN!</h2>
       <h3>Free Trial Classes Available</h3>
-      <p>Give Your Child a Confident Future.</p>
+      <p>Learning Opportunities for All Ages.</p>
       <p><strong>Contact: 8810397239</strong></p>
 
       <a href="https://wa.me/918810397239"
@@ -1388,7 +1322,7 @@ footer {
   </div>
 </section>
 
-<!-- ================= WHY KUKU KIDS CARE ================= -->
+<!-- WHY KUKU -->
 
 <section class="why-kuku-section" id="why-kuku">
   <div class="container">
@@ -1396,13 +1330,14 @@ footer {
     <div class="section-head">
       <span class="eyebrow">💜 Learning • Growing • Shining</span>
       <h2>🌟 Why KuKu Kids Care?</h2>
-      <h3>A Place Where Young Minds Shine!</h3>
+      <h3>A Place Where Every Learner Can Shine!</h3>
 
       <p class="why-kuku-intro">
-        KuKu Kids Care is more than just an English learning platform.
-        It is a place where children learn, explore, express and grow
-        with confidence. We make learning enjoyable through friendly
-        guidance, regular practice and creative activities.
+        KuKu Kids Care is more than just a learning platform.
+        It is a place where learners develop skills, explore,
+        express themselves and grow with confidence.
+        We make learning enjoyable through friendly guidance,
+        regular practice and creative activities.
       </p>
     </div>
 
@@ -1411,66 +1346,47 @@ footer {
       <article class="why-kuku-card">
         <div class="why-kuku-icon">🌟</div>
         <h3>Confidence Building</h3>
-        <p>
-          Helping children speak confidently, express their thoughts
-          and participate in activities.
-        </p>
+        <p>Helping learners speak confidently, express their thoughts and participate in activities.</p>
       </article>
 
       <article class="why-kuku-card">
         <div class="why-kuku-icon">📚</div>
         <h3>Enjoyable Learning</h3>
-        <p>
-          Making English learning easy, interesting and enjoyable
-          through fun and interactive practice.
-        </p>
+        <p>Making learning easy, interesting and enjoyable through interactive practice.</p>
       </article>
 
       <article class="why-kuku-card">
         <div class="why-kuku-icon">🔤</div>
         <h3>Phonics & Pronunciation</h3>
-        <p>
-          Developing letter sounds, pronunciation, vocabulary
-          and early reading skills.
-        </p>
+        <p>Developing letter sounds, pronunciation, vocabulary and early reading skills.</p>
       </article>
 
       <article class="why-kuku-card">
         <div class="why-kuku-icon">🗣️</div>
         <h3>Speaking Practice</h3>
-        <p>
-          Building everyday conversation skills and helping
-          children communicate more comfortably.
-        </p>
+        <p>Building everyday conversation skills and helping learners communicate comfortably.</p>
       </article>
 
       <article class="why-kuku-card">
         <div class="why-kuku-icon">🎨</div>
         <h3>Creative Thinking</h3>
-        <p>
-          Encouraging imagination, storytelling, creative writing
-          and the sharing of new ideas.
-        </p>
+        <p>Encouraging imagination, storytelling, creative writing and sharing new ideas.</p>
       </article>
 
       <article class="why-kuku-card">
         <div class="why-kuku-icon">🎤</div>
         <h3>Personality Development</h3>
-        <p>
-          Encouraging public speaking, positive self-expression
-          and communication skills.
-        </p>
+        <p>Encouraging public speaking, positive self-expression and communication skills.</p>
       </article>
 
     </div>
 
     <div class="why-kuku-message">
-      <h3>💖 Every Child Has the Potential to Shine!</h3>
+      <h3>💖 Every Learner Has the Potential to Shine!</h3>
       <p>
-        Every child is unique. With the right guidance, encouragement
-        and regular practice, children can become more confident learners.
-        At KuKu Kids Care, we encourage every child to learn at a
-        comfortable pace and enjoy the journey.
+        Every learner is unique. With the right guidance,
+        encouragement and regular practice, everyone can develop
+        new skills and become a confident learner.
       </p>
     </div>
 
@@ -1479,7 +1395,7 @@ footer {
     </div>
 
     <p>
-      We Don't Just Teach English. We Encourage Confidence,
+      We Don't Just Teach. We Encourage Confidence,
       Creativity and Communication Skills.
     </p>
 
@@ -1494,7 +1410,7 @@ footer {
   </div>
 </section>
 
-<!-- ================= PHOTO ================= -->
+<!-- PHOTO -->
 
 <section class="photo-section" aria-label="KuKu Kids Care learning photo">
   <div class="photo-card">
@@ -1508,7 +1424,7 @@ footer {
   </div>
 </section>
 
-<!-- ================= STUDY MATERIAL ================= -->
+<!-- STUDY MATERIAL -->
 
 <section id="study-material">
   <div class="container">
@@ -1516,19 +1432,19 @@ footer {
     <div class="section-head">
       <h2>📚 Meet Your Coach</h2>
 
-      <p>10 years of experience | MBA Qualified Coach – Mr. Ranjeet Kumar</p>
+      <p>10 Years of Experience | MBA Qualified Coach – Mr. Ranjeet Kumar</p>
 
       <p>
-        Learning areas include phonics, reading, writing, speaking, grammar,
-        computer basics, digital marketing, website building, AI awareness
-        and social media skills.
+        Learning areas include phonics, reading, writing, speaking,
+        grammar, computer basics, digital marketing, website building,
+        AI awareness and social media skills.
       </p>
     </div>
 
   </div>
 </section>
 
-<!-- ================= ABOUT COACH ================= -->
+<!-- ABOUT COACH -->
 
 <section id="about">
   <div class="container about-grid">
@@ -1545,21 +1461,23 @@ footer {
 
     <div class="about">
 
-      <span class="eyebrow">Meet your coach</span>
+      <span class="eyebrow">Meet Your Coach</span>
 
-      <h2>A supportive place for every young learner</h2>
+      <h2>A Supportive Place for Every Learner</h2>
 
       <p>
-        Hi! I’m Coach Ranjeet Kumar. At KuKu Kids Care, our goal is to make
-        English practice encouraging, practical and enjoyable for children.
-        We focus on participation, regular practice and learning at a
-        comfortable pace.
+        Hi! I'm Coach Ranjeet Kumar.
+        At KuKu Kids Care, our goal is to make learning encouraging,
+        practical and enjoyable for everyone.
+        We focus on participation, regular practice and learning
+        at a comfortable pace according to each learner's level.
       </p>
 
       <ul class="check">
         <li>Online and offline learning options</li>
         <li>Speaking, reading and vocabulary practice</li>
-        <li>Friendly, child-focused activities</li>
+        <li>Friendly learning environment</li>
+        <li>Courses for different ages and educational levels</li>
       </ul>
 
       <p class="tiny">
@@ -1568,10 +1486,11 @@ footer {
       </p>
 
     </div>
+
   </div>
 </section>
 
-<!-- ================= POSTER ================= -->
+<!-- POSTER -->
 
 <section class="poster-section" id="english-speaking-poster">
 
@@ -1584,7 +1503,7 @@ footer {
 
 </section>
 
-<!-- ================= FREE TRIAL ================= -->
+<!-- FREE TRIAL FORM -->
 
 <section id="trial">
   <div class="container">
@@ -1593,13 +1512,14 @@ footer {
       <div class="trial-grid">
 
         <div>
-          <span class="eyebrow">🎁 Start with a free trial</span>
+          <span class="eyebrow">🎁 Start with a Free Trial</span>
 
-          <h2>Let’s find the right class for your child.</h2>
+          <h2>Let's Find the Right Course for You!</h2>
 
           <p>
-            Fill in the short form. It will open WhatsApp with your details
-            so you can review and send your enquiry to KuKu Kids Care.
+            Learning is for everyone. Whether you are a child,
+            student, graduate or working professional,
+            tell us what you want to learn.
           </p>
 
           <p>
@@ -1608,28 +1528,65 @@ footer {
           </p>
 
           <p class="tiny">
-            Your message is not sent automatically.
-            Review it in WhatsApp and tap Send.
+            Fill in the form. WhatsApp will open with your details.
+            Review your message and tap Send.
           </p>
         </div>
 
         <form class="form" id="trialForm">
 
-          <label for="parent">Parent/Guardian Name</label>
+          <label for="parent">Your Name / Parent or Guardian Name</label>
           <input id="parent" name="parent" required
                  placeholder="Enter your name">
 
-          <label for="child">Child's Name</label>
+          <label for="child">Learner's Name</label>
           <input id="child" name="child" required
-                 placeholder="Enter child's name">
+                 placeholder="Enter learner's name">
 
-          <label for="age">Child's Age</label>
+          <label for="age">Learner's Age</label>
           <select id="age" name="age" required>
-            <option value="">Choose age</option>
-            <option>3–4 years</option>
-            <option>5–6 years</option>
-            <option>7–9 years</option>
-            <option>10+ years</option>
+            <option value="">Choose age group</option>
+            <option>Below 5 Years</option>
+            <option>5–10 Years</option>
+            <option>11–15 Years</option>
+            <option>16–20 Years</option>
+            <option>21–30 Years</option>
+            <option>31–40 Years</option>
+            <option>41–50 Years</option>
+            <option>Above 50 Years</option>
+          </select>
+
+          <label for="level">Educational Level</label>
+          <select id="level" name="level" required>
+            <option value="">Choose educational level</option>
+            <option>Pre-Nursery / Nursery</option>
+            <option>Primary School</option>
+            <option>Middle School</option>
+            <option>Secondary / Higher Secondary</option>
+            <option>College Student</option>
+            <option>Graduate</option>
+            <option>Postgraduate</option>
+            <option>Working Professional</option>
+            <option>Other / Not Applicable</option>
+          </select>
+
+          <label for="course">Which Course Do You Want to Learn?</label>
+          <select id="course" name="course" required>
+            <option value="">Choose your course</option>
+            <option>Spoken English</option>
+            <option>Phonics & Grammar</option>
+            <option>Computer Basics</option>
+            <option>Advanced Excel</option>
+            <option>Digital Marketing</option>
+            <option>Artificial Intelligence (AI)</option>
+            <option>Tally & Accounting</option>
+            <option>Interview Preparation</option>
+            <option>Personality Development</option>
+            <option>Website Building – HTML & CSS</option>
+            <option>Java & C++ Programming</option>
+            <option>App Development</option>
+            <option>Multiple Courses</option>
+            <option>Need Guidance</option>
           </select>
 
           <label for="mode">Preferred Class</label>
@@ -1637,15 +1594,13 @@ footer {
             <option value="">Choose class type</option>
             <option>Online</option>
             <option>Offline – Bokaro Steel City</option>
-            <option>Either online or offline</option>
+            <option>Either Online or Offline</option>
           </select>
 
-          <label for="goal">
-            What would your child like to practise? (optional)
-          </label>
+          <label for="goal">Your Learning Goals (Optional)</label>
 
           <textarea id="goal" name="goal" rows="2"
-                    placeholder="Speaking, reading, phonics..."></textarea>
+                    placeholder="Tell us what you want to learn..."></textarea>
 
           <button class="btn pink" type="submit">
             Request Free Trial on WhatsApp →
@@ -1663,7 +1618,7 @@ footer {
   </div>
 </section>
 
-<!-- ================= DIGITAL SKILLS ================= -->
+<!-- DIGITAL SKILLS -->
 
 <section class="dsm-section" id="digital-skills">
   <div class="container">
@@ -1674,8 +1629,8 @@ footer {
       <h2>Computer & Digital Marketing Skills</h2>
 
       <p>
-        Learn digital skills, explore new technology and discover creative
-        ways to grow in the digital world.
+        Learn digital skills, explore new technology and discover
+        creative ways to grow in the digital world.
       </p>
     </div>
 
@@ -1691,7 +1646,7 @@ footer {
       <article class="dsm-card">
         <div class="dsm-icon">📱</div>
         <h3>App Development</h3>
-        <p>Explore mobile app concepts, UI/UX design, no-code tools and app development basics.</p>
+        <p>Explore mobile app concepts, UI/UX design, app features and development basics.</p>
         <a href="#trial" class="dsm-btn">Explore Course →</a>
       </article>
 
@@ -1736,23 +1691,26 @@ footer {
 
 </main>
 
-<!-- ================= FOOTER ================= -->
+<!-- FOOTER -->
 
 <footer>
   <div class="footer-inner">
 
     <div>
       <div class="footer-brand">📚 KuKu Kids Care</div>
-      <p>Learn English with fun, confidence and creativity.</p>
+      <p>Learn • Grow • Build Your Future</p>
+      <p>Learning Has No Age Limit!</p>
     </div>
 
     <div>
       <strong>Branch & Contact</strong>
       <p>Bokaro Steel City, Jharkhand</p>
+
       <p>
         WhatsApp:
         <a href="https://wa.me/918810397239">8810397239</a>
       </p>
+
       <p>
         Email:
         <a href="mailto:kukukidscare@gmail.com">
@@ -1761,20 +1719,20 @@ footer {
       </p>
     </div>
 
-    <p>© <span id="year"></span> KuKu Kids Care</p>
+    <p>© <span id="year"></span> KuKu Kids Care. All Rights Reserved.</p>
 
   </div>
 </footer>
 
-<!-- ================= FLOATING WHATSAPP ================= -->
+<!-- FLOATING WHATSAPP -->
 
 <a class="whatsapp"
-   href="https://wa.me/918810397239?text=Hello%20KuKu%20Kids%20Care%2C%20I%20want%20to%20enquire%20about%20classes."
+   href="https://wa.me/918810397239?text=Hello%20KuKu%20Kids%20Care%2C%20I%20want%20to%20enquire%20about%20courses."
    target="_blank" rel="noopener">
   ☘ WhatsApp
 </a>
 
-<!-- ================= JAVASCRIPT ================= -->
+<!-- JAVASCRIPT -->
 
 <script>
 document.getElementById("year").textContent =
@@ -1789,11 +1747,13 @@ document.getElementById("trialForm").addEventListener("submit", function(event) 
 
   const message =
     "Hello KuKu Kids Care! I would like to request a free trial class.\n" +
-    "Parent/Guardian: " + value("parent") + "\n" +
-    "Child: " + value("child") + "\n" +
-    "Age: " + value("age") + "\n" +
-    "Preferred class: " + value("mode") + "\n" +
-    "Learning goals: " + (value("goal") || "Not specified");
+    "Name: " + value("parent") + "\n" +
+    "Learner's Name: " + value("child") + "\n" +
+    "Age Group: " + value("age") + "\n" +
+    "Educational Level: " + value("level") + "\n" +
+    "Interested Course: " + value("course") + "\n" +
+    "Preferred Class: " + value("mode") + "\n" +
+    "Learning Goals: " + (value("goal") || "Not specified");
 
   const whatsappUrl =
     "https://wa.me/918810397239?text=" +
