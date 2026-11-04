@@ -410,28 +410,108 @@
       .btn { padding: 9px 11px; font-size: 13px; }
       .f1 { left: -4px; }
       .f2 { right: -4px; }
-    }
+    /* HEADER DESIGN FIX */
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 15px 4%;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand img {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+}
+
+.header-trial {
+  margin-left: auto;
+  white-space: nowrap;
+  order: 2;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  width: 100%;
+  order: 3;
+}
+
+.nav-links a {
+  white-space: nowrap;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 600px) {
+  .nav {
+    gap: 12px;
+  }
+
+  .brand {
+    gap: 5px;
+  }
+
+  .brand img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .brand span {
+    font-size: 17px;
+  }
+
+  .header-trial {
+    font-size: 13px;
+    padding: 11px 14px;
+  }
+
+  .nav-links {
+    gap: 18px;
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding: 10px 0;
+  }
+}
   </style>
 </head>
 
 <body>
-  <header>
-    <div class="nav">
-      <a class="brand" href="#home" aria-label="KuKu Kids Care home">
-        <img src="file_00000000bfe88211b3af4206090ce683.png" alt="KuKu Kids Care Logo" class="brand-logo">
-        <span>KuKu Kids Care</span>
-      </a>
-      <nav class="nav-links" aria-label="Main navigation">
-        <a href="#home">Home</a>
-        <a href="#classes">Classes</a>
-        <a href="#why-choose-us">Why Us</a>
-        <a href="#about">Coach</a>
-        <a href="#digital-skills">Digital Skills</a>
-        <a class="btn" href="#trial">Free Trial</a>
-      </nav>
-    </div>
-  </header>
+    <header>
+  <div class="nav">
 
+    <a class="brand" href="#home">
+      <img src="file_00000000bfe88211b3af4206090ce683.png"
+           alt="KuKu Kids Care Logo">
+      <span>KuKu Kids Care</span>
+    </a>
+
+    <a class="btn header-trial" href="#trial">
+      ✨ Free Trial
+    </a>
+
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#classes">Classes</a>
+      <a href="#why-choose-us">Why Us</a>
+      <a href="#about">Coach</a>
+      <a href="#digital-skills">Digital Skills</a>
+    </nav>
+
+  </div>
+</header>
+  
   <main>
     <section class="hero" id="home">
       <div class="hero-inner">
