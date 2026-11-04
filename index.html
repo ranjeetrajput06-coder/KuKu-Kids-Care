@@ -660,6 +660,47 @@ header {
     }
 }
 
+/* ===== LOGO SIZE FIX ===== */
+
+/* Desktop Mode */
+@media (min-width: 769px) {
+    .brand img {
+        width: 48px !important;
+        height: 48px !important;
+        max-width: 48px !important;
+        object-fit: contain !important;
+        flex-shrink: 0 !important;
+    }
+
+    .brand {
+        display: flex !important;
+        align-items: center !important;
+        flex-wrap: nowrap !important;
+        white-space: nowrap !important;
+        gap: 10px;
+    }
+
+    .brand span {
+        font-size: 20px !important;
+        white-space: nowrap !important;
+    }
+}
+
+/* Mobile Mode */
+@media (max-width: 768px) {
+    .brand img {
+        width: 38px !important;
+        height: 38px !important;
+        max-width: 38px !important;
+        object-fit: contain !important;
+    }
+
+    .brand span {
+        font-size: 16px !important;
+        white-space: nowrap !important;
+    }
+}
+
       </style>
 </head>
 
