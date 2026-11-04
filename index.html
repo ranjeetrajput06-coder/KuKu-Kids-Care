@@ -483,7 +483,84 @@
     padding: 10px 0;
   }
 }
-  </style>
+ 
+/* ==================================
+   KUKU KIDS CARE - LOGO SIZE FIX
+================================== */
+
+/* Header */
+header {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 15px;
+}
+
+/* Logo and Brand Name */
+.brand {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px;
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+/* Logo Image */
+.brand img {
+    width: 65px !important;
+    height: 65px !important;
+    max-width: 65px !important;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* Brand Name */
+.brand span {
+    font-size: 28px;
+    white-space: nowrap;
+}
+
+/* Navigation */
+.nav nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Desktop and Tablet Fix */
+@media screen and (min-width: 769px) {
+    .brand img {
+        width: 65px !important;
+        height: 65px !important;
+    }
+}
+
+/* Mobile Fix */
+@media screen and (max-width: 768px) {
+    .nav {
+        justify-content: space-between;
+    }
+
+    .brand img {
+        width: 48px !important;
+        height: 48px !important;
+    }
+
+    .brand span {
+        font-size: 20px;
+    }
+}
+
+      </style>
 </head>
 
 <body>
