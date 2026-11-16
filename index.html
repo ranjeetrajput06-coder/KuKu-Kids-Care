@@ -8,33 +8,255 @@
 <meta name="theme-color" content="#079fd0">
 <title>KuKu Kids Care | Learn English with Confidence</title>
 <style>
-:root{--purple:#6847d9;--pink:#ff5278;--yellow:#ffd85e;--blue:#079fd0;--ink:#252244;--muted:#69647e}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:150px}body{margin:0;max-width:100%;overflow-x:hidden;font-family:Nunito,"Trebuchet MS",Arial,sans-serif;color:var(--ink);background:#fffaf2;line-height:1.6}img{display:block;max-width:100%;height:auto}a{overflow-wrap:anywhere}header{position:sticky;top:0;z-index:100;background:#fffdf8f5;backdrop-filter:blur(8px);border-bottom:1px solid #eee7ff}.kuku-top-banner{background:#ffad24;color:white;padding:10px 5%;display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:18px;font-weight:1000}.kuku-top-banner a{background:#079fd0;color:white;padding:11px 19px;border-radius:35px;text-decoration:none;font-size:14px;white-space:nowrap}.nav{max-width:1180px;margin:auto;padding:10px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.brand-box{display:flex;align-items:center;gap:12px;min-width:0;padding:7px 12px;border:2px solid var(--purple);border-radius:15px;background:white;box-shadow:0 4px 0 #e7ddff;text-decoration:none;flex:1 1 350px;max-width:560px}.brand-logo{width:55px;height:55px;object-fit:contain;flex:0 0 55px;border-right:1px solid #ded5ff;padding-right:9px}.brand-copy{display:flex;flex-direction:column;line-height:1.15}.brand-name{color:var(--purple);font-size:clamp(20px,2.5vw,30px);font-weight:1000;white-space:nowrap}.brand-tagline{margin-top:5px;color:var(--ink);font-size:13px;font-weight:900;font-style:italic}.header-trial{flex:0 0 auto}.nav-links{width:100%;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:5px}.nav-links a{color:var(--ink);text-decoration:none;font-size:13px;font-weight:900;padding:7px 10px;border-radius:20px;white-space:nowrap}.nav-links a:hover{background:#f0eaff}.btn{display:inline-block;padding:11px 17px;border:0;border-radius:999px;background:var(--purple);color:white!important;text-decoration:none;text-align:center;font:inherit;font-weight:900;cursor:pointer;box-shadow:0 5px 0 #4830a5}.btn.pink{background:var(--pink);box-shadow:0 5px 0 #d94787}.btn.yellow{background:var(--yellow);color:var(--ink)!important;box-shadow:0 5px 0 #d6ad35}section{width:100%;padding:55px 20px;scroll-margin-top:150px}.container,.hero-inner,.footer-inner{width:100%;max-width:1120px;margin:0 auto}
-.hero{overflow:hidden;background:#079fd0;color:white;padding:40px 6% 45px}.hero-inner{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}.eyebrow{display:inline-block;padding:6px 14px;border:2px dashed #c6b6ff;border-radius:999px;background:white;color:var(--purple);font-weight:900}.hero h1{margin:18px 0;font-size:clamp(38px,5vw,62px);line-height:1.08;color:white}.hero h1 span{color:#ffdf75}.hero p{max-width:590px;color:white;font-size:18px;font-weight:700}.hero .tiny{color:#e7faff;font-size:14px}.hero-actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:23px}.hero-actions .btn{background:white;color:#252244!important;box-shadow:0 5px 0 #087eaa}.hero-actions .btn.yellow{background:#ffd85e}.art{min-height:370px;position:relative;display:grid;place-items:center}.sun{position:absolute;width:min(290px,75vw);aspect-ratio:1;background:#f6b9dd;border-radius:48% 52% 60% 40%;transform:rotate(-12deg)}.kid-card{position:relative;width:min(310px,85%);padding:15px;border:5px solid white;border-radius:28px;background:white;text-align:center;box-shadow:0 18px 50px #003c6655;transform:rotate(2deg)}.kid-card img{width:100%;max-width:250px;height:230px;object-fit:cover;margin:auto;border-radius:18px}.kid-card strong{display:block;margin-top:10px;color:var(--purple);font-size:22px}.kid-card small{color:#746d8e;font-weight:800}.float{position:absolute;z-index:2;padding:10px 13px;border-radius:16px;background:white;color:var(--purple);font-weight:900;box-shadow:0 10px 24px #392b7517}.f1{top:12px;left:0;transform:rotate(-6deg)}.f2{right:0;bottom:22px;transform:rotate(5deg)}.hero-bottom{background:white;padding:17px 3%;text-align:center}.hero-bottom a{display:block;border:3px solid #ed5270;border-radius:10px;padding:13px;color:#ed5270;font-size:20px;font-weight:1000;text-decoration:none}
-/* Clickable Explore Courses poster */.explore-poster-section{padding:34px 16px 42px;background:linear-gradient(135deg,#fff0f5,#ffe0eb 48%,#f1eaff)}.explore-poster{max-width:1120px;margin:auto;padding:28px;border-radius:28px;background:linear-gradient(135deg,#f43f68,#ff6685 52%,#ff9eb1);color:white;box-shadow:0 14px 35px #9f31522b}.explore-poster-head{text-align:center;max-width:800px;margin:0 auto 24px}.poster-kicker{display:inline-block;padding:6px 14px;border-radius:30px;background:white;color:#e94470;font-weight:1000;font-size:13px}.explore-poster-head h2{margin:12px 0 8px;font-size:clamp(28px,4vw,44px);line-height:1.12;color:white}.explore-poster-head p{margin:0;color:#fff7fa;font-weight:700}.explore-course-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.explore-course-link{display:flex;align-items:center;justify-content:space-between;gap:12px;min-width:0;padding:15px 16px;border:2px solid #ffffffa8;border-radius:17px;background:white;color:#29213f;text-decoration:none;box-shadow:0 5px 0 #c83d63}.explore-course-name{display:flex;align-items:center;gap:12px;min-width:0}.explore-course-icon{width:46px;height:46px;flex:0 0 46px;display:grid;place-items:center;border-radius:14px;background:#fff0f5;font-size:25px}.explore-course-name strong{display:block;font-size:16px;line-height:1.25}.explore-course-name small{display:block;margin-top:4px;color:#8a5268;font-weight:800}.view-more{flex:0 0 auto;padding:9px 12px;border-radius:9px;background:#ed456e;color:white;font-size:13px;font-weight:1000;white-space:nowrap}.explore-poster-footer{margin-top:22px;text-align:center}.explore-poster-footer p{font-weight:800}.explore-poster-footer a{display:inline-block;padding:12px 24px;border-radius:30px;background:white;color:#e94470;text-decoration:none;font-weight:1000}
-.section-head{max-width:760px;margin:0 auto 30px;text-align:center}.section-head h2,.dsm-heading h2{margin:0 0 10px;font-size:clamp(2rem,4vw,2.8rem);line-height:1.2}.section-head p{color:var(--muted)}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.card{min-width:0;padding:23px;border:1px solid #eee8ff;border-radius:22px;background:white;box-shadow:0 10px 28px #392b7509;scroll-margin-top:160px}.card-icon{width:56px;height:56px;display:grid;place-items:center;border-radius:17px;background:#f0eaff;font-size:1.8rem}.card:nth-child(2) .card-icon{background:#fff0f6}.card:nth-child(3) .card-icon{background:#e7faff}.card h3{margin:13px 0 7px;font-size:1.2rem}.card p{margin:0;color:var(--muted)}.card-more{margin-top:15px;border-top:1px solid #eee8ff;padding-top:12px}.card-more summary{display:inline-block;cursor:pointer;list-style:none;padding:9px 15px;border-radius:9px;background:#ed456e;color:white;font-weight:1000}.card-more summary::-webkit-details-marker{display:none}.card-more summary:after{content:" ＋"}.card-more[open] summary:after{content:" −"}.card-more p{margin-top:12px;line-height:1.65}
-.age-section{background:linear-gradient(135deg,#fff0f7,#f0eaff 50%,#e8faff);text-align:center}.age-banner{max-width:1000px;margin:0 auto 30px;padding:30px 22px;border-radius:25px;background:white;box-shadow:0 10px 30px #392b7510}.age-banner h2{margin:0 0 10px;color:var(--purple);font-size:clamp(2rem,4vw,2.8rem);line-height:1.2}.age-banner h3{margin:10px 0;color:#ed8b18;font-size:1.4rem}.age-banner p{max-width:800px;margin:12px auto;color:#55516f}.age-highlight{display:inline-block;margin:12px 0;padding:10px 18px;border-radius:30px;background:#fff2c7;color:#6847d9;font-weight:900}.age-grid,.feature-grid,.why-kuku-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px;text-align:left}.age-card,.why-kuku-card{padding:22px;border:1px solid #eee5ff;border-radius:20px;background:white;box-shadow:0 8px 22px #392b7510}.age-icon,.why-kuku-icon{width:55px;height:55px;display:grid;place-items:center;border-radius:16px;background:#f0eaff;font-size:1.8rem}.age-card h3{margin:12px 0 6px;color:var(--purple)}.age-card p,.why-kuku-card p{margin:0;color:var(--muted)}.age-message,.why-kuku-message{max-width:850px;margin:30px auto 20px;padding:25px;border-radius:20px;background:white;color:#44405f}.age-message h3,.why-kuku-message h3{margin:0 0 8px;color:#ed8b18}.age-message p,.why-kuku-message p{margin:0}.age-tagline,.why-kuku-bottom{margin:20px 0;color:#16834c;font-size:1.25rem;font-weight:900}.band{display:grid;grid-template-columns:1fr auto;gap:22px;align-items:center;padding:35px;border-radius:28px;background:var(--purple);color:white}.band h2{margin:0 0 8px;font-size:clamp(1.7rem,3vw,2.2rem);line-height:1.2}.band p{margin:0;color:#e8e1ff}.admission-poster{width:100%;max-width:850px;margin:25px auto;padding:0 14px;text-align:center}.admission-poster img{width:100%;height:auto;border-radius:15px}
-.welcome-section{background:linear-gradient(135deg,#eaf8ff,#fff5e8);text-align:center}.welcome-section h2{margin:0 0 8px;color:#0879b9;font-size:clamp(1.8rem,4vw,2.3rem)}.welcome-section h3{margin:8px 0;color:#ed8b18;font-size:1.35rem}.welcome-intro{max-width:760px;margin:15px auto 28px;color:#444}.feature-card{padding:21px 16px;border-radius:16px;border-bottom:4px solid #19a6d5;background:white;box-shadow:0 4px 14px #00000012}.feature-card .emoji{font-size:2.2rem}.feature-card h4{margin:10px 0;color:#0879b9;font-size:1.15rem}.feature-card p{margin:0;color:#555}.feature-photo{width:100%;max-width:250px;margin:15px auto;border-radius:12px}.welcome-message{margin:28px auto 15px;color:#16834c;font-size:1.2rem;font-weight:900}.admission{max-width:650px;margin:22px auto 0;padding:24px 16px;border-radius:16px;background:#0879b9;color:white}.admission h2{color:white}.admission h3{color:#ffdf75}.admission a{display:inline-block;margin-top:10px;padding:12px 23px;border-radius:30px;background:#20b96c;color:white;text-decoration:none;font-weight:900}.why-kuku-section{background:linear-gradient(135deg,#fff0f7,#f0eaff 50%,#e8faff);text-align:center}.why-kuku-section .section-head h2{color:var(--purple)}.why-kuku-intro{max-width:780px;margin:15px auto 30px;color:#55516f;font-size:1.05rem}.why-kuku-card h3{margin:13px 0 7px;color:var(--purple);font-size:1.15rem}.photo-section{padding:35px;background:#fff8e8;text-align:center}.photo-card{max-width:850px;margin:auto;padding:15px;border-radius:18px;background:white;box-shadow:0 4px 15px #0000001f}.photo-card img{width:100%;border-radius:14px}.photo-card h2{margin:15px 0 5px;color:#ff7b00}.website-photo{width:100%;text-align:center;margin:20px auto;padding:0 14px}.website-photo img{width:100%;max-width:450px;height:auto;border-radius:15px;margin:auto}.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:30px;align-items:center}.coach-art{min-height:280px;padding:24px;display:grid;place-items:center;border-radius:28px;background:linear-gradient(135deg,#ffebf4,#e6f9ff);text-align:center}.coach-art img{width:100%;max-width:250px;margin:auto;border-radius:15px}.coach-art strong{display:block;margin-top:10px;color:var(--purple);font-size:1.4rem}.about h2{margin:10px 0;font-size:clamp(2rem,4vw,2.5rem);line-height:1.2}.check{padding-left:0;list-style:none}.check li{margin:9px 0;font-weight:800}.check li:before{content:"✓";margin-right:10px;color:#2cae85;font-weight:1000}.poster-section{padding:28px 12px;background:#f0f8ff;text-align:center}.poster-section img{width:100%;max-width:650px;margin:auto;border-radius:12px}.poster-book-btn{display:inline-block;margin-top:17px;padding:12px 24px;border-radius:25px;background:#ff1744;color:white;text-decoration:none;font-weight:900}
-.trial-wrap{border-radius:28px;padding:30px;background:linear-gradient(120deg,#fff0f6,#f0eaff)}.trial-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}.trial h2{margin:10px 0;font-size:clamp(1.9rem,4vw,2.4rem);line-height:1.2}.form{padding:22px;border-radius:22px;background:white;box-shadow:0 12px 30px #392b7510}.form label{display:block;margin:11px 0 5px;font-weight:900}.form input,.form select,.form textarea{width:100%;min-width:0;padding:11px 12px;border:1.5px solid #e0d9f6;border-radius:11px;background:#fffdfd;font:inherit}.form button{width:100%;margin-top:17px;font:inherit;font-weight:900}
-.dsm-section{background:linear-gradient(135deg,#f0f9ff,#fff7ed)}.dsm-heading{max-width:740px;margin:0 auto 32px;text-align:center}.dsm-tag{display:inline-block;padding:7px 13px;border-radius:30px;background:#dbeafe;color:#075985;font-size:12px;font-weight:900;letter-spacing:1px}.dsm-heading h2{margin-top:13px;color:#12305a}.dsm-heading p{color:#536477}.dsm-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:19px}.dsm-card{min-width:0;display:flex;flex-direction:column;align-items:flex-start;padding:23px 20px;border:1px solid #e0eaf5;border-radius:17px;background:white;box-shadow:0 7px 22px #19375a14}.dsm-icon{width:55px;height:55px;display:grid;place-items:center;border-radius:15px;background:#eaf4ff;font-size:1.8rem}.dsm-card h3{margin:15px 0 8px;color:#17345b;font-size:1.2rem}.dsm-card p{flex-grow:1;margin:0 0 14px;color:#596779;font-size:.92rem}.dsm-btn{padding:8px 0;color:#075985;text-decoration:none;font-weight:900}.dsm-bottom{margin-top:35px;padding:25px 16px;border-radius:17px;background:#12305a;color:white;text-align:center}.dsm-bottom h3{margin:0 0 8px;font-size:1.5rem}.dsm-main-btn{display:inline-block;margin-top:8px;padding:12px 22px;border-radius:30px;background:#fbbf24;color:#17345b;text-decoration:none;font-weight:900}
-footer{padding:35px 20px;background:#24203f;color:white}.footer-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px}.footer-inner p{margin:4px 0;color:#d5d0e8}.footer-inner a{color:#ffe17d}.footer-brand{color:white;font-size:1.25rem;font-weight:900}.whatsapp{position:fixed;right:16px;bottom:16px;z-index:150;max-width:calc(100% - 32px);padding:12px 16px;border-radius:999px;background:#20bf68;color:white;text-decoration:none;font-weight:900;box-shadow:0 8px 22px #0003}
-@media(max-width:900px){.hero-inner,.about-grid,.trial-grid{grid-template-columns:1fr}.cards,.feature-grid,.dsm-grid,.why-kuku-grid,.age-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.band{grid-template-columns:1fr}.hero-inner{gap:12px}}
-@media(max-width:700px){.supercharge-inner{grid-template-columns:1fr;padding:27px 20px;gap:8px}.supercharge-copy h2{font-size:40px}.supercharge-copy p{font-size:15px}.supercharge-photo-wrap{min-height:285px}.supercharge-photo{height:275px;width:min(245px,78%)}.supercharge-caption{right:3%;bottom:5px;font-size:13px}}
-@media(max-width:600px){html{scroll-padding-top:165px}.kuku-top-banner{padding:9px 3%;font-size:14px;gap:5px}.kuku-top-banner a{font-size:10px;padding:11px 9px}.nav{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:7px;align-items:center;padding:8px 10px}.brand-box{grid-column:1;grid-row:1;flex:none;width:100%;min-width:0;padding:5px 7px;gap:6px}.brand-logo{width:38px;height:38px;flex:0 0 38px;padding-right:6px}.brand-name{font-size:16px}.brand-tagline{font-size:9px;margin-top:4px}.header-trial{grid-column:2;grid-row:1;font-size:11px;padding:7px 9px;white-space:nowrap}.nav-links{grid-column:1/-1;gap:3px}.nav-links a{padding:6px 7px;font-size:11px}section{padding:43px 14px}.hero{padding:32px 7% 35px}.hero h1{font-size:40px}.hero p{font-size:16px}.art{min-height:300px}.float{padding:8px 10px;font-size:12px}.cards,.feature-grid,.dsm-grid,.why-kuku-grid,.age-grid{grid-template-columns:1fr;gap:14px}.card,.dsm-card,.why-kuku-card,.age-card{padding:19px}.band{padding:24px 18px}.trial-wrap{padding:17px}.form{padding:16px}.footer-inner{align-items:flex-start;flex-direction:column}.section-head,.dsm-heading{text-align:left}.age-banner{padding:24px 16px}.photo-section{padding:25px 14px}.hero-bottom a{font-size:17px}.explore-poster{padding:21px 14px;border-radius:21px}.explore-course-grid{grid-template-columns:1fr;gap:11px}.explore-course-link{padding:12px}.explore-course-name strong{font-size:14px}.view-more{font-size:11px;padding:8px 9px}.explore-poster-head h2{font-size:30px}}
-@media(max-width:360px){.brand-name{font-size:15px}.brand-tagline{font-size:8px}.header-trial{font-size:10px;padding:7px}.nav-links a{font-size:10px;padding:5px}.btn{padding:9px 11px;font-size:13px}}
-
-/* Yellow Supercharge Your English hero poster - placed above Age Is No Bar */
-.supercharge-section{padding:34px 18px;background:#fffaf2}.supercharge-poster{max-width:1120px;margin:auto;overflow:hidden;border-radius:30px;background:linear-gradient(120deg,#ffb52e 0%,#ffd45a 58%,#ffe58b 100%);box-shadow:0 14px 35px #9a6a1e25;color:#29213f}.supercharge-inner{display:grid;grid-template-columns:1.12fr .88fr;gap:24px;align-items:center;padding:38px 5%}.supercharge-copy .supercharge-kicker{display:inline-block;padding:7px 15px;border-radius:30px;background:#fff;color:#9b5600;font-size:13px;font-weight:1000}.supercharge-copy h2{margin:17px 0 12px;font-size:clamp(34px,5vw,58px);line-height:1.04;color:#34234f}.supercharge-copy h2 span{color:#e94c62}.supercharge-copy p{max-width:590px;margin:10px 0;color:#4e3b37;font-size:17px;font-weight:800}.supercharge-points{display:flex;flex-wrap:wrap;gap:9px;margin:18px 0}.supercharge-points span{padding:8px 12px;border:1px solid #ffffffc9;border-radius:30px;background:#fff9e9;color:#59412c;font-size:13px;font-weight:900}.supercharge-cta{display:inline-block;margin-top:8px;padding:14px 23px;border-radius:30px;background:#e94368;color:white;text-decoration:none;font-weight:1000;box-shadow:0 5px 0 #b92e50}.supercharge-photo-wrap{position:relative;display:grid;place-items:center;min-height:330px}.supercharge-sun{position:absolute;width:min(300px,80%);aspect-ratio:1;border-radius:50%;background:#fff1bd;box-shadow:0 0 0 14px #ffffff45}.supercharge-photo{position:relative;width:min(290px,82%);height:330px;object-fit:cover;object-position:center top;border:8px solid white;border-radius:28px;box-shadow:0 16px 38px #6c421e40;transform:rotate(2deg)}.supercharge-caption{position:absolute;right:0;bottom:10px;padding:11px 15px;border-radius:14px;background:white;color:#6847d9;font-weight:1000;box-shadow:0 8px 20px #0002;transform:rotate(-3deg)}
-
+:root{--purple:#6847d9;--pink:#ff5278;--yellow:#ffd85e;--blue:#079fd0;--ink:#252244;--muted:#69647e}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:150px}
+body{margin:0;max-width:100%;overflow-x:hidden;font-family:Nunito,"Trebuchet MS",Arial,sans-serif;color:var(--ink);background:#fffaf2;line-height:1.6}
+img{display:block;max-width:100%;height:auto}
+a{overflow-wrap:anywhere}
+header{position:sticky;top:0;z-index:100;background:#fffdf8f5;backdrop-filter:blur(8px);border-bottom:1px solid #eee7ff}
+.kuku-top-banner{background:#ffad24;color:white;padding:10px 5%;display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:18px;font-weight:1000}
+.kuku-top-banner a{background:#079fd0;color:white;padding:11px 19px;border-radius:35px;text-decoration:none;font-size:14px;white-space:nowrap}
+.nav{max-width:1180px;margin:auto;padding:10px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.brand-box{display:flex;align-items:center;gap:12px;min-width:0;padding:7px 12px;border:2px solid var(--purple);border-radius:15px;background:white;box-shadow:0 4px 0 #e7ddff;text-decoration:none;flex:1 1 350px;max-width:560px}
+.brand-logo{width:55px;height:55px;object-fit:contain;flex:0 0 55px;border-right:1px solid #ded5ff;padding-right:9px}
+.brand-copy{display:flex;flex-direction:column;line-height:1.15}
+.brand-name{color:var(--purple);font-size:clamp(20px,2.5vw,30px);font-weight:1000;white-space:nowrap}
+.brand-tagline{margin-top:5px;color:var(--ink);font-size:13px;font-weight:900;font-style:italic}
+.header-trial{flex:0 0 auto}
+.nav-links{width:100%;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:5px}
+.nav-links a{color:var(--ink);text-decoration:none;font-size:13px;font-weight:900;padding:7px 10px;border-radius:20px;white-space:nowrap}
+.nav-links a:hover{background:#f0eaff}
+.btn{display:inline-block;padding:11px 17px;border:0;border-radius:999px;background:var(--purple);color:white!important;text-decoration:none;text-align:center;font:inherit;font-weight:900;cursor:pointer;box-shadow:0 5px 0 #4830a5}
+.btn.pink{background:var(--pink);box-shadow:0 5px 0 #d94787}
+.btn.yellow{background:var(--yellow);color:var(--ink)!important;box-shadow:0 5px 0 #d6ad35}
+section{width:100%;padding:55px 20px;scroll-margin-top:150px}
+.container,.hero-inner,.footer-inner{width:100%;max-width:1120px;margin:0 auto}
+.hero{overflow:hidden;background:#079fd0;color:white;padding:40px 6% 45px}
+.hero-inner{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}
+.eyebrow{display:inline-block;padding:6px 14px;border:2px dashed #c6b6ff;border-radius:999px;background:white;color:var(--purple);font-weight:900}
+.hero h1{margin:18px 0;font-size:clamp(38px,5vw,62px);line-height:1.08;color:white}
+.hero h1 span{color:#ffdf75}
+.hero p{max-width:590px;color:white;font-size:18px;font-weight:700}
+.hero .tiny{color:#e7faff;font-size:14px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:23px}
+.hero-actions .btn{background:white;color:#252244!important;box-shadow:0 5px 0 #087eaa}
+.hero-actions .btn.yellow{background:#ffd85e}
+.art{min-height:370px;position:relative;display:grid;place-items:center}
+.sun{position:absolute;width:min(290px,75vw);aspect-ratio:1;background:#f6b9dd;border-radius:48% 52% 60% 40%;transform:rotate(-12deg)}
+.kid-card{position:relative;width:min(310px,85%);padding:15px;border:5px solid white;border-radius:28px;background:white;text-align:center;box-shadow:0 18px 50px #003c6655;transform:rotate(2deg)}
+.kid-card img{width:100%;max-width:250px;height:230px;object-fit:cover;margin:auto;border-radius:18px}
+.kid-card strong{display:block;margin-top:10px;color:var(--purple);font-size:22px}
+.kid-card small{color:#746d8e;font-weight:800}
+.float{position:absolute;z-index:2;padding:10px 13px;border-radius:16px;background:white;color:var(--purple);font-weight:900;box-shadow:0 10px 24px #392b7517}
+.f1{top:12px;left:0;transform:rotate(-6deg)}
+.f2{right:0;bottom:22px;transform:rotate(5deg)}
+.hero-bottom{background:white;padding:17px 3%;text-align:center}
+.hero-bottom a{display:block;border:3px solid #ed5270;border-radius:10px;padding:13px;color:#ed5270;font-size:20px;font-weight:1000;text-decoration:none}
+/* Clickable Explore Courses poster */
+.explore-poster-section{padding:34px 16px 42px;background:linear-gradient(135deg,#fff0f5,#ffe0eb 48%,#f1eaff)}
+.explore-poster{max-width:1120px;margin:auto;padding:28px;border-radius:28px;background:linear-gradient(135deg,#f43f68,#ff6685 52%,#ff9eb1);color:white;box-shadow:0 14px 35px #9f31522b}
+.explore-poster-head{text-align:center;max-width:800px;margin:0 auto 24px}
+.poster-kicker{display:inline-block;padding:6px 14px;border-radius:30px;background:white;color:#e94470;font-weight:1000;font-size:13px}
+.explore-poster-head h2{margin:12px 0 8px;font-size:clamp(28px,4vw,44px);line-height:1.12;color:white}
+.explore-poster-head p{margin:0;color:#fff7fa;font-weight:700}
+.explore-course-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.explore-course-link{display:flex;align-items:center;justify-content:space-between;gap:12px;min-width:0;padding:15px 16px;border:2px solid #ffffffa8;border-radius:17px;background:white;color:#29213f;text-decoration:none;box-shadow:0 5px 0 #c83d63}
+.explore-course-name{display:flex;align-items:center;gap:12px;min-width:0}
+.explore-course-icon{width:46px;height:46px;flex:0 0 46px;display:grid;place-items:center;border-radius:14px;background:#fff0f5;font-size:25px}
+.explore-course-name strong{display:block;font-size:16px;line-height:1.25}
+.explore-course-name small{display:block;margin-top:4px;color:#8a5268;font-weight:800}
+.view-more{flex:0 0 auto;padding:9px 12px;border-radius:9px;background:#ed456e;color:white;font-size:13px;font-weight:1000;white-space:nowrap}
+.explore-poster-footer{margin-top:22px;text-align:center}
+.explore-poster-footer p{font-weight:800}
+.explore-poster-footer a{display:inline-block;padding:12px 24px;border-radius:30px;background:white;color:#e94470;text-decoration:none;font-weight:1000}
+.section-head{max-width:760px;margin:0 auto 30px;text-align:center}
+.section-head h2,.dsm-heading h2{margin:0 0 10px;font-size:clamp(2rem,4vw,2.8rem);line-height:1.2}
+.section-head p{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.card{min-width:0;padding:23px;border:1px solid #eee8ff;border-radius:22px;background:white;box-shadow:0 10px 28px #392b7509;scroll-margin-top:160px}
+.card-icon{width:56px;height:56px;display:grid;place-items:center;border-radius:17px;background:#f0eaff;font-size:1.8rem}
+.card:nth-child(2) .card-icon{background:#fff0f6}
+.card:nth-child(3) .card-icon{background:#e7faff}
+.card h3{margin:13px 0 7px;font-size:1.2rem}
+.card p{margin:0;color:var(--muted)}
+.card-more{margin-top:15px;border-top:1px solid #eee8ff;padding-top:12px}
+.card-more summary{display:inline-block;cursor:pointer;list-style:none;padding:9px 15px;border-radius:9px;background:#ed456e;color:white;font-weight:1000}
+.card-more summary::-webkit-details-marker{display:none}
+.card-more summary:after{content:" ＋"}
+.card-more[open] summary:after{content:" −"}
+.card-more p{margin-top:12px;line-height:1.65}
+.age-section{background:linear-gradient(135deg,#fff0f7,#f0eaff 50%,#e8faff);text-align:center}
+.age-banner{max-width:1000px;margin:0 auto 30px;padding:30px 22px;border-radius:25px;background:white;box-shadow:0 10px 30px #392b7510}
+.age-banner h2{margin:0 0 10px;color:var(--purple);font-size:clamp(2rem,4vw,2.8rem);line-height:1.2}
+.age-banner h3{margin:10px 0;color:#ed8b18;font-size:1.4rem}
+.age-banner p{max-width:800px;margin:12px auto;color:#55516f}
+.age-highlight{display:inline-block;margin:12px 0;padding:10px 18px;border-radius:30px;background:#fff2c7;color:#6847d9;font-weight:900}
+.age-grid,.feature-grid,.why-kuku-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px;text-align:left}
+.age-card,.why-kuku-card{padding:22px;border:1px solid #eee5ff;border-radius:20px;background:white;box-shadow:0 8px 22px #392b7510}
+.age-icon,.why-kuku-icon{width:55px;height:55px;display:grid;place-items:center;border-radius:16px;background:#f0eaff;font-size:1.8rem}
+.age-card h3{margin:12px 0 6px;color:var(--purple)}
+.age-card p,.why-kuku-card p{margin:0;color:var(--muted)}
+.age-message,.why-kuku-message{max-width:850px;margin:30px auto 20px;padding:25px;border-radius:20px;background:white;color:#44405f}
+.age-message h3,.why-kuku-message h3{margin:0 0 8px;color:#ed8b18}
+.age-message p,.why-kuku-message p{margin:0}
+.age-tagline,.why-kuku-bottom{margin:20px 0;color:#16834c;font-size:1.25rem;font-weight:900}
+.band{display:grid;grid-template-columns:1fr auto;gap:22px;align-items:center;padding:35px;border-radius:28px;background:var(--purple);color:white}
+.band h2{margin:0 0 8px;font-size:clamp(1.7rem,3vw,2.2rem);line-height:1.2}
+.band p{margin:0;color:#e8e1ff}
+.admission-poster{width:100%;max-width:850px;margin:25px auto;padding:0 14px;text-align:center}
+.admission-poster img{width:100%;height:auto;border-radius:15px}
+.welcome-section{background:linear-gradient(135deg,#eaf8ff,#fff5e8);text-align:center}
+.welcome-section h2{margin:0 0 8px;color:#0879b9;font-size:clamp(1.8rem,4vw,2.3rem)}
+.welcome-section h3{margin:8px 0;color:#ed8b18;font-size:1.35rem}
+.welcome-intro{max-width:760px;margin:15px auto 28px;color:#444}
+.feature-card{padding:21px 16px;border-radius:16px;border-bottom:4px solid #19a6d5;background:white;box-shadow:0 4px 14px #00000012}
+.feature-card .emoji{font-size:2.2rem}
+.feature-card h4{margin:10px 0;color:#0879b9;font-size:1.15rem}
+.feature-card p{margin:0;color:#555}
+.feature-photo{width:100%;max-width:250px;margin:15px auto;border-radius:12px}
+.welcome-message{margin:28px auto 15px;color:#16834c;font-size:1.2rem;font-weight:900}
+.admission{max-width:650px;margin:22px auto 0;padding:24px 16px;border-radius:16px;background:#0879b9;color:white}
+.admission h2{color:white}
+.admission h3{color:#ffdf75}
+.admission a{display:inline-block;margin-top:10px;padding:12px 23px;border-radius:30px;background:#20b96c;color:white;text-decoration:none;font-weight:900}
+.why-kuku-section{background:linear-gradient(135deg,#fff0f7,#f0eaff 50%,#e8faff);text-align:center}
+.why-kuku-section .section-head h2{color:var(--purple)}
+.why-kuku-intro{max-width:780px;margin:15px auto 30px;color:#55516f;font-size:1.05rem}
+.why-kuku-card h3{margin:13px 0 7px;color:var(--purple);font-size:1.15rem}
+.photo-section{padding:35px;background:#fff8e8;text-align:center}
+.photo-card{max-width:850px;margin:auto;padding:15px;border-radius:18px;background:white;box-shadow:0 4px 15px #0000001f}
+.photo-card img{width:100%;border-radius:14px}
+.photo-card h2{margin:15px 0 5px;color:#ff7b00}
+/* FIX: LARGE AGE IS NO BAR POSTER */
+.website-photo{width:100%;max-width:1200px;text-align:center;margin:35px auto;padding:0 20px}
+.website-photo img{display:block;width:100%;max-width:1050px;height:auto;border-radius:20px;margin:0 auto;object-fit:contain;box-shadow:0 12px 30px rgba(0,0,0,.12)}
+.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:30px;align-items:center}
+.coach-art{min-height:280px;padding:24px;display:grid;place-items:center;border-radius:28px;background:linear-gradient(135deg,#ffebf4,#e6f9ff);text-align:center}
+.coach-art img{width:100%;max-width:250px;margin:auto;border-radius:15px}
+.coach-art strong{display:block;margin-top:10px;color:var(--purple);font-size:1.4rem}
+.about h2{margin:10px 0;font-size:clamp(2rem,4vw,2.5rem);line-height:1.2}
+.check{padding-left:0;list-style:none}
+.check li{margin:9px 0;font-weight:800}
+.check li:before{content:"✓";margin-right:10px;color:#2cae85;font-weight:1000}
+.poster-section{padding:28px 12px;background:#f0f8ff;text-align:center}
+.poster-section img{width:100%;max-width:650px;margin:auto;border-radius:12px}
+.poster-book-btn{display:inline-block;margin-top:17px;padding:12px 24px;border-radius:25px;background:#ff1744;color:white;text-decoration:none;font-weight:900}
+.trial-wrap{border-radius:28px;padding:30px;background:linear-gradient(120deg,#fff0f6,#f0eaff)}
+.trial-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.trial h2{margin:10px 0;font-size:clamp(1.9rem,4vw,2.4rem);line-height:1.2}
+.form{padding:22px;border-radius:22px;background:white;box-shadow:0 12px 30px #392b7510}
+.form label{display:block;margin:11px 0 5px;font-weight:900}
+.form input,.form select,.form textarea{width:100%;min-width:0;padding:11px 12px;border:1.5px solid #e0d9f6;border-radius:11px;background:#fffdfd;font:inherit}
+.form button{width:100%;margin-top:17px;font:inherit;font-weight:900}
+.dsm-section{background:linear-gradient(135deg,#f0f9ff,#fff7ed)}
+.dsm-heading{max-width:740px;margin:0 auto 32px;text-align:center}
+.dsm-tag{display:inline-block;padding:7px 13px;border-radius:30px;background:#dbeafe;color:#075985;font-size:12px;font-weight:900;letter-spacing:1px}
+.dsm-heading h2{margin-top:13px;color:#12305a}
+.dsm-heading p{color:#536477}
+.dsm-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:19px}
+.dsm-card{min-width:0;display:flex;flex-direction:column;align-items:flex-start;padding:23px 20px;border:1px solid #e0eaf5;border-radius:17px;background:white;box-shadow:0 7px 22px #19375a14}
+.dsm-icon{width:55px;height:55px;display:grid;place-items:center;border-radius:15px;background:#eaf4ff;font-size:1.8rem}
+.dsm-card h3{margin:15px 0 8px;color:#17345b;font-size:1.2rem}
+.dsm-card p{flex-grow:1;margin:0 0 14px;color:#596779;font-size:.92rem}
+.dsm-btn{padding:8px 0;color:#075985;text-decoration:none;font-weight:900}
+.dsm-bottom{margin-top:35px;padding:25px 16px;border-radius:17px;background:#12305a;color:white;text-align:center}
+.dsm-bottom h3{margin:0 0 8px;font-size:1.5rem}
+.dsm-main-btn{display:inline-block;margin-top:8px;padding:12px 22px;border-radius:30px;background:#fbbf24;color:#17345b;text-decoration:none;font-weight:900}
+footer{padding:35px 20px;background:#24203f;color:white}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px}
+.footer-inner p{margin:4px 0;color:#d5d0e8}
+.footer-inner a{color:#ffe17d}
+.footer-brand{color:white;font-size:1.25rem;font-weight:900}
+.whatsapp{position:fixed;right:16px;bottom:16px;z-index:150;max-width:calc(100% - 32px);padding:12px 16px;border-radius:999px;background:#20bf68;color:white;text-decoration:none;font-weight:900;box-shadow:0 8px 22px #0003}
+/* Yellow Supercharge Your English poster */
+.supercharge-section{padding:34px 18px;background:#fffaf2}
+.supercharge-poster{max-width:1120px;margin:auto;overflow:hidden;border-radius:30px;background:linear-gradient(120deg,#ffb52e 0%,#ffd45a 58%,#ffe58b 100%);box-shadow:0 14px 35px #9a6a1e25;color:#29213f}
+.supercharge-inner{display:grid;grid-template-columns:1.12fr .88fr;gap:24px;align-items:center;padding:38px 5%}
+.supercharge-copy .supercharge-kicker{display:inline-block;padding:7px 15px;border-radius:30px;background:#fff;color:#9b5600;font-size:13px;font-weight:1000}
+.supercharge-copy h2{margin:17px 0 12px;font-size:clamp(34px,5vw,58px);line-height:1.04;color:#34234f}
+.supercharge-copy h2 span{color:#e94c62}
+.supercharge-copy p{max-width:590px;margin:10px 0;color:#4e3b37;font-size:17px;font-weight:800}
+.supercharge-points{display:flex;flex-wrap:wrap;gap:9px;margin:18px 0}
+.supercharge-points span{padding:8px 12px;border:1px solid #ffffffc9;border-radius:30px;background:#fff9e9;color:#59412c;font-size:13px;font-weight:900}
+.supercharge-cta{display:inline-block;margin-top:8px;padding:14px 23px;border-radius:30px;background:#e94368;color:white;text-decoration:none;font-weight:1000;box-shadow:0 5px 0 #b92e50}
+.supercharge-photo-wrap{position:relative;display:grid;place-items:center;min-height:330px}
+.supercharge-sun{position:absolute;width:min(300px,80%);aspect-ratio:1;border-radius:50%;background:#fff1bd;box-shadow:0 0 0 14px #ffffff45}
+.supercharge-photo{position:relative;width:min(290px,82%);height:330px;object-fit:cover;object-position:center top;border:8px solid white;border-radius:28px;box-shadow:0 16px 38px #6c421e40;transform:rotate(2deg)}
+.supercharge-caption{position:absolute;right:0;bottom:10px;padding:11px 15px;border-radius:14px;background:white;color:#6847d9;font-weight:1000;box-shadow:0 8px 20px #0002;transform:rotate(-3deg)}
+@media(max-width:900px){
+ .hero-inner,.about-grid,.trial-grid{grid-template-columns:1fr}
+ .cards,.feature-grid,.dsm-grid,.why-kuku-grid,.age-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .band{grid-template-columns:1fr}
+ .hero-inner{gap:12px}
+ .supercharge-inner{grid-template-columns:1fr}
+}
+@media(max-width:700px){
+ .supercharge-inner{grid-template-columns:1fr;padding:27px 20px;gap:8px}
+ .supercharge-copy h2{font-size:40px}
+ .supercharge-copy p{font-size:15px}
+ .supercharge-photo-wrap{min-height:285px}
+ .supercharge-photo{height:275px;width:min(245px,78%)}
+ .supercharge-caption{right:3%;bottom:5px;font-size:13px}
+}
+@media(max-width:600px){
+ html{scroll-padding-top:165px}
+ .kuku-top-banner{padding:9px 3%;font-size:14px;gap:5px}
+ .kuku-top-banner a{font-size:10px;padding:11px 9px}
+ .nav{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:7px;align-items:center;padding:8px 10px}
+ .brand-box{grid-column:1;grid-row:1;flex:none;width:100%;min-width:0;padding:5px 7px;gap:6px}
+ .brand-logo{width:38px;height:38px;flex:0 0 38px;padding-right:6px}
+ .brand-name{font-size:16px}
+ .brand-tagline{font-size:9px;margin-top:4px}
+ .header-trial{grid-column:2;grid-row:1;font-size:11px;padding:7px 9px;white-space:nowrap}
+ .nav-links{grid-column:1/-1;gap:3px}
+ .nav-links a{padding:6px 7px;font-size:11px}
+ section{padding:43px 14px}
+ .hero{padding:32px 7% 35px}
+ .hero h1{font-size:40px}
+ .hero p{font-size:16px}
+ .art{min-height:300px}
+ .float{padding:8px 10px;font-size:12px}
+ .cards,.feature-grid,.dsm-grid,.why-kuku-grid,.age-grid{grid-template-columns:1fr;gap:14px}
+ .card,.dsm-card,.why-kuku-card,.age-card{padding:19px}
+ .band{padding:24px 18px}
+ .trial-wrap{padding:17px}
+ .form{padding:16px}
+ .footer-inner{align-items:flex-start;flex-direction:column}
+ .section-head,.dsm-heading{text-align:left}
+ .age-banner{padding:24px 16px}
+ .photo-section{padding:25px 14px}
+ .hero-bottom a{font-size:17px}
+ .explore-poster{padding:21px 14px;border-radius:21px}
+ .explore-course-grid{grid-template-columns:1fr;gap:11px}
+ .explore-course-link{padding:12px}
+ .explore-course-name strong{font-size:14px}
+ .view-more{font-size:11px;padding:8px 9px}
+ .explore-poster-head h2{font-size:30px}
+ .website-photo{padding:0 10px;margin:20px auto}
+ .website-photo img{width:100%;max-width:100%;height:auto}
+}
+@media(max-width:360px){
+ .brand-name{font-size:15px}
+ .brand-tagline{font-size:8px}
+ .header-trial{font-size:10px;padding:7px}
+ .nav-links a{font-size:10px;padding:5px}
+ .btn{padding:9px 11px;font-size:13px}
+}
 </style>
 </head>
 <body>
-<header><div class="kuku-top-banner"><span>🎁 Limited Seats Only!</span><a href="#trial">BOOK YOUR FREE TRIAL 📖</a></div><div class="nav">
-<a class="brand-box" href="#home" aria-label="KuKu Kids Care home"><img class="brand-logo" src="file_00000000bfe88211b3af4206090ce683.png" alt="KuKu Kids Care bird logo"><span class="brand-copy"><span class="brand-name">KuKu Kids Care</span><span class="brand-tagline">Learn English with Confidence</span></span></a>
-<a class="btn pink header-trial" href="#trial">✨ Free Trial</a><nav class="nav-links" aria-label="Main navigation"><a href="#home">Home</a><a href="#classes">Classes</a><a href="#age-no-bar">All Ages</a><a href="#why-choose-us">Why Us</a><a href="#why-kuku">Why KuKu</a><a href="#about">Coach</a><a href="#digital-skills">Digital Skills</a></nav></div></header>
+<header>
+ <div class="kuku-top-banner"><span>🎁 Limited Seats Only!</span><a href="#trial">BOOK YOUR FREE TRIAL 📖</a></div>
+ <div class="nav">
+  <a class="brand-box" href="#home" aria-label="KuKu Kids Care home"><img class="brand-logo" src="file_00000000bfe88211b3af4206090ce683.png" alt="KuKu Kids Care bird logo"><span class="brand-copy"><span class="brand-name">KuKu Kids Care</span><span class="brand-tagline">Learn English with Confidence</span></span></a>
+  <a class="btn pink header-trial" href="#trial">✨ Free Trial</a>
+  <nav class="nav-links" aria-label="Main navigation"><a href="#home">Home</a><a href="#classes">Classes</a><a href="#age-no-bar">All Ages</a><a href="#why-choose-us">Why Us</a><a href="#why-kuku">Why KuKu</a><a href="#about">Coach</a><a href="#digital-skills">Digital Skills</a></nav>
+ </div>
+</header>
 <main>
 <section class="hero" id="home"><div class="hero-inner"><div><span class="eyebrow">✨ Learn • Speak • Shine</span><h1>Creating<br>Confident<br><span>Achievers!</span></h1><p>AI-Powered Online Classes for Life Skills. From English Communication and English Fluency to Mental Maths, Numerical Ability, and Problem Solving.</p><p>🎓 Online & Offline Classes<br>🌈 Learning Has No Age Limit!</p><div class="hero-actions"><a class="btn pink" href="#trial">🎈 Book Your Free Trial</a><a class="btn yellow" href="#classes">Explore Classes ↓</a></div><p class="tiny">Online classes and offline classes in Bokaro Steel City, Jharkhand.</p></div><div class="art"><div class="sun"></div><div class="float f1">🔤 Learn Something New</div><div class="kid-card"><img src="file_000000001a1c821182f0b49c0ff533ea.jpg" alt="Happy student at KuKu Kids Care" loading="lazy"><strong>Learners of All Ages</strong><small>Big Dreams, Bright Futures!</small></div><div class="float f2">⭐ Grow with Confidence</div></div></div></section>
 <div class="hero-bottom"><a href="#trial">BOOK YOUR FREE TRIAL TODAY 🎁</a></div>
-<!-- NEW POSTER: directly under Book Your Free Trial Today -->
 <section class="explore-poster-section" id="explore-courses-poster" aria-label="Explore courses poster"><div class="explore-poster"><div class="explore-poster-head"><span class="poster-kicker">🌟 LEARN • GROW • SHINE</span><h2>Explore Courses At KuKu Kids Care</h2><p>AI + Human Guided Learning for Kids, Students & Working Professionals</p></div><div class="explore-course-grid">
 <a class="explore-course-link" href="#course-spoken-english"><span class="explore-course-name"><span class="explore-course-icon">🎤</span><span><strong>Public Speaking & Creative Writing</strong><small>Kids to Adults</small></span></span><span class="view-more">VIEW MORE ↗</span></a>
 <a class="explore-course-link" href="#course-phonics"><span class="explore-course-name"><span class="explore-course-icon">🔤</span><span><strong>Phonics & English Grammar</strong><small>Pre-K to 12</small></span></span><span class="view-more">VIEW MORE ↗</span></a>
@@ -46,7 +268,7 @@ footer{padding:35px 20px;background:#24203f;color:white}.footer-inner{display:fl
 <a class="explore-course-link" href="#course-coding"><span class="explore-course-name"><span class="explore-course-icon">🌐</span><span><strong>Website, Coding & App Development</strong><small>Build Digital Projects</small></span></span><span class="view-more">VIEW MORE ↗</span></a>
 </div><div class="explore-poster-footer"><p>Choose a course and tap VIEW MORE to open its details.</p><a href="#trial">🎁 BOOK YOUR FREE TRIAL</a></div></div></section>
 
-<section class="supercharge-section" id="supercharge-english" aria-label="Supercharge your English"><div class="supercharge-poster"><div class="supercharge-inner"><div class="supercharge-copy"><span class="supercharge-kicker">🌟 KUКU KIDS CARE • LEARN • GROW • SHINE</span><h2>Supercharge<br>Your <span>English!</span></h2><p>Build confidence. Improve communication. Create new opportunities with fun, practical and guided learning.</p><div class="supercharge-points"><span>🗣️ Spoken English</span><span>🎤 Public Speaking</span><span>📚 Grammar & Vocabulary</span><span>🌈 All Age Groups Welcome</span></div><a class="supercharge-cta" href="#trial">🎁 BOOK YOUR FREE TRIAL</a><p>Online & Offline Classes • Bokaro Steel City & Online</p></div><div class="supercharge-photo-wrap"><div class="supercharge-sun"></div><img class="supercharge-photo" src="file_00000000e1ac81fa97f76cbde908bdf1.png" alt="Coach Ranjeet Kumar, KuKu Kids Care" loading="lazy"><div class="supercharge-caption">Meet Your Coach<br>Ranjeet Kumar</div></div></div></div></section>
+<section class="supercharge-section" id="supercharge-english" aria-label="Supercharge your English"><div class="supercharge-poster"><div class="supercharge-inner"><div class="supercharge-copy"><span class="supercharge-kicker">🌟 KUKU KIDS CARE • LEARN • GROW • SHINE</span><h2>Supercharge<br>Your <span>English!</span></h2><p>Build confidence. Improve communication. Create new opportunities with fun, practical and guided learning.</p><div class="supercharge-points"><span>🗣️ Spoken English</span><span>🎤 Public Speaking</span><span>📚 Grammar & Vocabulary</span><span>🌈 All Age Groups Welcome</span></div><a class="supercharge-cta" href="#trial">🎁 BOOK YOUR FREE TRIAL</a><p>Online & Offline Classes • Bokaro Steel City & Online</p></div><div class="supercharge-photo-wrap"><div class="supercharge-sun"></div><img class="supercharge-photo" src="file_00000000e1ac81fa97f76cbde908bdf1.png" alt="Coach Ranjeet Kumar, KuKu Kids Care" loading="lazy"><div class="supercharge-caption">Meet Your Coach<br>Ranjeet Kumar</div></div></div></div></section>
 
 <section class="age-section" id="age-no-bar"><div class="container"><div class="age-banner"><span class="eyebrow">🌟 Everyone Is Welcome</span><h2>AGE IS NO BAR FOR LEARNING!</h2><h3>Learning Has No Age Limit – Your Future Starts Here!</h3><p>At KuKu Kids Care, we believe that knowledge has no age limit. Learning is a lifelong journey, and anyone can start at any stage of life.</p><p>Whether you are a Pre-Nursery student, a school-going child, a college student, a graduate, a postgraduate or a working professional, KuKu Kids Care welcomes everyone who wants to learn, grow and achieve something in life.</p><div class="age-highlight">From Pre-Nursery to Post-Graduation – Everyone Is Welcome!</div></div>
 <div class="section-head"><h2>🎓 Learning Opportunities for Every Age</h2><p>Different learners have different goals. That's why we provide learning groups according to age, educational level, learning needs and course requirements.</p></div><div class="age-grid">
@@ -58,7 +280,8 @@ footer{padding:35px 20px;background:#24203f;color:white}.footer-inner{display:fl
 <article class="age-card"><div class="age-icon">🌱</div><h3>6. Adult & Lifelong Learners</h3><p>Anyone who wants to improve English, learn computers, explore technology or develop a new skill is welcome.</p></article></div>
 <div class="age-message"><h3>💜 Separate Learning Groups for Every Learner</h3><p>We understand that a young child, a school student, a college learner and an adult have different learning needs. Students are grouped according to age, educational level, course and learning requirements.</p></div><div class="age-tagline">YOUR AGE DOESN'T DEFINE YOUR FUTURE!</div><h3>Let's Learn Together, Grow Together & Build Our Future Together!</h3><p>Whether you are 5 or 50, it's never too late to learn something new.</p><p><strong>🌟 KuKu Kids Care – Empowering Every Learner, At Every Age!</strong></p><a href="#trial" class="btn pink">🚀 Start Your Learning Journey</a></div></section>
 <div style="text-align:center;margin:28px auto;padding:0 14px"><h3 style="color:#6847d9">Learn Today. Build Skills for Tomorrow!</h3><p style="color:#69647e">Start your learning journey with KuKu Kids Care.</p><a class="btn pink" href="#trial">🎓 Enquire About Courses</a></div>
-<div class="website-photo"><img src="file_0000000037b482119a0f15105de0314d.png" alt="KuKu Kids Care learning" loading="lazy"></div>
+<!-- Age Is No Bar poster: enlarged on desktop and full-width responsive on mobile -->
+<div class="website-photo"><img src="file_0000000037b482119a0f15105de0314d.png" alt="KuKu Kids Care Age Is No Bar learning poster" loading="lazy"></div>
 <section><div class="container"><div class="band"><div><h2>Small Steps Today. A Brighter Future Tomorrow!</h2><p>Ask us about class timings and the best learning option for your age and learning goals.</p></div><a class="btn yellow" href="https://wa.me/918810397239?text=Hello%20KuKu%20Kids%20Care%2C%20I%20want%20to%20know%20about%20your%20courses." target="_blank" rel="noopener">Chat on WhatsApp ↗</a></div></div></section>
 <section class="admission-poster" aria-label="Admissions poster"><img src="file_000000004dfc82118f2ecc3c5ddab9ae.png.png" alt="KuKu Kids Care Admissions Open 2027-28" loading="lazy"></section>
 
@@ -103,4 +326,5 @@ document.querySelectorAll(".explore-course-link").forEach(function(link){link.ad
 document.querySelectorAll(".dsm-card .dsm-btn").forEach(function(link){link.addEventListener("click",function(){var target=document.querySelector(this.getAttribute("href"));if(target){var details=target.querySelector("details.card-more");if(details)details.open=true;}});});
 document.getElementById("trialForm").addEventListener("submit",function(event){event.preventDefault();const value=id=>document.getElementById(id).value.trim();const message="Hello KuKu Kids Care! I would like to request a free trial class.\n"+"Name: "+value("parent")+"\nLearner's Name: "+value("child")+"\nAge Group: "+value("age")+"\nEducational Level: "+value("level")+"\nInterested Course: "+value("course")+"\nPreferred Class: "+value("mode")+"\nLearning Goals: "+(value("goal")||"Not specified");const whatsappUrl="https://wa.me/918810397239?text="+encodeURIComponent(message);window.open(whatsappUrl,"_blank","noopener");});
 </script>
-</body></html>
+</body>
+</html>
