@@ -11,7 +11,7 @@
 :root{--purple:#6847d9;--pink:#ff5278;--yellow:#ffd85e;--blue:#079fd0;--ink:#252244;--muted:#69647e}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:150px}
-body{margin:0;max-width:100%;overflow-x:hidden;font-family:Nunito,"Trebuchet MS",Arial,sans-serif;color:var(--ink);background:#fffaf2;line-height:1.6}
+body{margin:0;width:100%;max-width:100%;overflow-x:hidden;font-family:Nunito,"Trebuchet MS",Arial,sans-serif;color:var(--ink);background:#fffaf2;line-height:1.6}
 img{display:block;max-width:100%;height:auto}
 a{overflow-wrap:anywhere}
 header{position:sticky;top:0;z-index:100;background:#fffdf8f5;backdrop-filter:blur(8px);border-bottom:1px solid #eee7ff}
@@ -53,14 +53,14 @@ section{width:100%;padding:55px 20px;scroll-margin-top:150px}
 .f2{right:0;bottom:22px;transform:rotate(5deg)}
 .hero-bottom{background:white;padding:17px 3%;text-align:center}
 .hero-bottom a{display:block;border:3px solid #ed5270;border-radius:10px;padding:13px;color:#ed5270;font-size:20px;font-weight:1000;text-decoration:none}
-/* Clickable Explore Courses poster */
-.explore-poster-section{padding:34px 16px 42px;background:linear-gradient(135deg,#fff0f5,#ffe0eb 48%,#f1eaff)}
-.explore-poster{max-width:1120px;margin:auto;padding:28px;border-radius:28px;background:linear-gradient(135deg,#f43f68,#ff6685 52%,#ff9eb1);color:white;box-shadow:0 14px 35px #9f31522b}
-.explore-poster-head{text-align:center;max-width:800px;margin:0 auto 24px}
+/* Full-width pink Explore Courses poster */
+.explore-poster-section{width:100%;padding:30px 0 36px;background:linear-gradient(135deg,#fff0f5,#ffe0eb 48%,#f1eaff)}
+.explore-poster{width:100%;max-width:none;margin:0;padding:32px clamp(16px,4vw,55px);border-radius:0;background:linear-gradient(135deg,#f43f68,#ff6685 52%,#ff9eb1);color:white;box-shadow:0 14px 35px #9f31522b}
+.explore-poster-head{text-align:center;max-width:1000px;margin:0 auto 24px}
 .poster-kicker{display:inline-block;padding:6px 14px;border-radius:30px;background:white;color:#e94470;font-weight:1000;font-size:13px}
 .explore-poster-head h2{margin:12px 0 8px;font-size:clamp(28px,4vw,44px);line-height:1.12;color:white}
 .explore-poster-head p{margin:0;color:#fff7fa;font-weight:700}
-.explore-course-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.explore-course-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;width:100%;max-width:1500px;margin:auto}
 .explore-course-link{display:flex;align-items:center;justify-content:space-between;gap:12px;min-width:0;padding:15px 16px;border:2px solid #ffffffa8;border-radius:17px;background:white;color:#29213f;text-decoration:none;box-shadow:0 5px 0 #c83d63}
 .explore-course-name{display:flex;align-items:center;gap:12px;min-width:0}
 .explore-course-icon{width:46px;height:46px;flex:0 0 46px;display:grid;place-items:center;border-radius:14px;background:#fff0f5;font-size:25px}
@@ -104,8 +104,8 @@ section{width:100%;padding:55px 20px;scroll-margin-top:150px}
 .band{display:grid;grid-template-columns:1fr auto;gap:22px;align-items:center;padding:35px;border-radius:28px;background:var(--purple);color:white}
 .band h2{margin:0 0 8px;font-size:clamp(1.7rem,3vw,2.2rem);line-height:1.2}
 .band p{margin:0;color:#e8e1ff}
-.admission-poster{width:100%;max-width:850px;margin:25px auto;padding:0 14px;text-align:center}
-.admission-poster img{width:100%;height:auto;border-radius:15px}
+.admission-poster{width:100%;max-width:none;margin:25px auto;padding:0;text-align:center}
+.admission-poster img{display:block;width:100%;max-width:none;height:auto;margin:0 auto;border-radius:0}
 .welcome-section{background:linear-gradient(135deg,#eaf8ff,#fff5e8);text-align:center}
 .welcome-section h2{margin:0 0 8px;color:#0879b9;font-size:clamp(1.8rem,4vw,2.3rem)}
 .welcome-section h3{margin:8px 0;color:#ed8b18;font-size:1.35rem}
@@ -124,13 +124,12 @@ section{width:100%;padding:55px 20px;scroll-margin-top:150px}
 .why-kuku-section .section-head h2{color:var(--purple)}
 .why-kuku-intro{max-width:780px;margin:15px auto 30px;color:#55516f;font-size:1.05rem}
 .why-kuku-card h3{margin:13px 0 7px;color:var(--purple);font-size:1.15rem}
-.photo-section{padding:35px;background:#fff8e8;text-align:center}
-.photo-card{max-width:850px;margin:auto;padding:15px;border-radius:18px;background:white;box-shadow:0 4px 15px #0000001f}
-.photo-card img{width:100%;border-radius:14px}
+.photo-section{width:100%;padding:35px 0;background:#fff8e8;text-align:center}
+.photo-card{width:100%;max-width:none;margin:auto;padding:0;border-radius:0;background:white;box-shadow:0 4px 15px #0000001f}
+.photo-card img{width:100%;border-radius:0}
 .photo-card h2{margin:15px 0 5px;color:#ff7b00}
-/* FIX: LARGE AGE IS NO BAR POSTER */
-.website-photo{width:100%;max-width:1200px;text-align:center;margin:35px auto;padding:0 20px}
-.website-photo img{display:block;width:100%;max-width:1050px;height:auto;border-radius:20px;margin:0 auto;object-fit:contain;box-shadow:0 12px 30px rgba(0,0,0,.12)}
+.website-photo{width:100%;max-width:none;text-align:center;margin:35px auto;padding:0}
+.website-photo img{display:block;width:100%;max-width:none;height:auto;border-radius:0;margin:0 auto;object-fit:contain;box-shadow:0 12px 30px rgba(0,0,0,.12)}
 .about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:30px;align-items:center}
 .coach-art{min-height:280px;padding:24px;display:grid;place-items:center;border-radius:28px;background:linear-gradient(135deg,#ffebf4,#e6f9ff);text-align:center}
 .coach-art img{width:100%;max-width:250px;margin:auto;border-radius:15px}
@@ -139,8 +138,8 @@ section{width:100%;padding:55px 20px;scroll-margin-top:150px}
 .check{padding-left:0;list-style:none}
 .check li{margin:9px 0;font-weight:800}
 .check li:before{content:"✓";margin-right:10px;color:#2cae85;font-weight:1000}
-.poster-section{padding:28px 12px;background:#f0f8ff;text-align:center}
-.poster-section img{width:100%;max-width:650px;margin:auto;border-radius:12px}
+.poster-section{width:100%;padding:28px 0;background:#f0f8ff;text-align:center}
+.poster-section img{display:block;width:100%;max-width:none;height:auto;margin:0 auto;border-radius:0;object-fit:contain}
 .poster-book-btn{display:inline-block;margin-top:17px;padding:12px 24px;border-radius:25px;background:#ff1744;color:white;text-decoration:none;font-weight:900}
 .trial-wrap{border-radius:28px;padding:30px;background:linear-gradient(120deg,#fff0f6,#f0eaff)}
 .trial-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
@@ -169,10 +168,10 @@ footer{padding:35px 20px;background:#24203f;color:white}
 .footer-inner a{color:#ffe17d}
 .footer-brand{color:white;font-size:1.25rem;font-weight:900}
 .whatsapp{position:fixed;right:16px;bottom:16px;z-index:150;max-width:calc(100% - 32px);padding:12px 16px;border-radius:999px;background:#20bf68;color:white;text-decoration:none;font-weight:900;box-shadow:0 8px 22px #0003}
-/* Yellow Supercharge Your English poster */
-.supercharge-section{padding:34px 18px;background:#fffaf2}
-.supercharge-poster{max-width:1120px;margin:auto;overflow:hidden;border-radius:30px;background:linear-gradient(120deg,#ffb52e 0%,#ffd45a 58%,#ffe58b 100%);box-shadow:0 14px 35px #9a6a1e25;color:#29213f}
-.supercharge-inner{display:grid;grid-template-columns:1.12fr .88fr;gap:24px;align-items:center;padding:38px 5%}
+/* Full-width yellow Supercharge Your English poster */
+.supercharge-section{width:100%;padding:30px 0;background:#fffaf2}
+.supercharge-poster{width:100%;max-width:none;margin:0;overflow:hidden;border-radius:0;background:linear-gradient(120deg,#ffb52e 0%,#ffd45a 58%,#ffe58b 100%);box-shadow:0 14px 35px #9a6a1e25;color:#29213f}
+.supercharge-inner{display:grid;grid-template-columns:1.12fr .88fr;gap:24px;align-items:center;padding:38px clamp(18px,5vw,65px)}
 .supercharge-copy .supercharge-kicker{display:inline-block;padding:7px 15px;border-radius:30px;background:#fff;color:#9b5600;font-size:13px;font-weight:1000}
 .supercharge-copy h2{margin:17px 0 12px;font-size:clamp(34px,5vw,58px);line-height:1.04;color:#34234f}
 .supercharge-copy h2 span{color:#e94c62}
@@ -225,16 +224,20 @@ footer{padding:35px 20px;background:#24203f;color:white}
  .footer-inner{align-items:flex-start;flex-direction:column}
  .section-head,.dsm-heading{text-align:left}
  .age-banner{padding:24px 16px}
- .photo-section{padding:25px 14px}
+ .photo-section{padding:25px 0}
  .hero-bottom a{font-size:17px}
- .explore-poster{padding:21px 14px;border-radius:21px}
+ .explore-poster{padding:22px 13px;border-radius:0}
  .explore-course-grid{grid-template-columns:1fr;gap:11px}
  .explore-course-link{padding:12px}
  .explore-course-name strong{font-size:14px}
  .view-more{font-size:11px;padding:8px 9px}
  .explore-poster-head h2{font-size:30px}
- .website-photo{padding:0 10px;margin:20px auto}
+ .website-photo{padding:0;margin:20px auto}
  .website-photo img{width:100%;max-width:100%;height:auto}
+ .supercharge-section,.explore-poster-section{padding-left:0;padding-right:0}
+ .supercharge-inner{padding:25px 15px}
+ .admission-poster,.poster-section{padding-left:0;padding-right:0}
+ .admission-poster img,.poster-section img,.website-photo img{width:100%;max-width:none;height:auto;object-fit:contain}
 }
 @media(max-width:360px){
  .brand-name{font-size:15px}
@@ -243,70 +246,23 @@ footer{padding:35px 20px;background:#24203f;color:white}
  .nav-links a{font-size:10px;padding:5px}
  .btn{padding:9px 11px;font-size:13px}
 }
- 
-/* KUKU KIDS CARE - ALL POSTERS SIZE FIX */
-
-/* Desktop */
-@media (min-width: 768px) {
-  .admission-poster {
-    max-width: 1200px !important;
-    width: 96% !important;
-    margin: 35px auto !important;
-  }
-
-  .admission-poster img {
-    width: 100% !important;
-    max-width: 1150px !important;
-    height: auto !important;
-    margin: auto !important;
-  }
-
-  .poster-section img {
-    width: 100% !important;
-    max-width: 1100px !important;
-    height: auto !important;
-    margin: auto !important;
-  }
-
-  .website-photo {
-    max-width: 1250px !important;
-    width: 98% !important;
-  }
-
-  .website-photo img {
-    max-width: 1150px !important;
-    width: 100% !important;
-    height: auto !important;
-  }
-
-  .explore-poster {
-    max-width: 1250px !important;
-  }
-
-  .supercharge-poster {
-    max-width: 1250px !important;
-  }
+/* FINAL POSTER WIDTH RULES: edge-to-edge on desktop and mobile, never crop poster images */
+.explore-poster-section,.supercharge-section,.admission-poster,.poster-section,.website-photo,.photo-section{width:100%;max-width:none;margin-left:0;margin-right:0}
+.explore-poster,.supercharge-poster{width:100%;max-width:none;border-radius:0}
+.admission-poster,.poster-section,.website-photo{padding-left:0;padding-right:0}
+.admission-poster img,.poster-section img,.website-photo img{display:block;width:100%;max-width:none;height:auto;object-fit:contain;border-radius:0}
+.photo-card{width:100%;max-width:none;padding:0;border-radius:0}
+.photo-card img{width:100%;height:auto;object-fit:contain;border-radius:0}
+@media(min-width:768px){
+ .explore-course-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .explore-poster{padding-left:clamp(28px,5vw,80px);padding-right:clamp(28px,5vw,80px)}
 }
-
-/* Mobile */
-@media (max-width: 767px) {
-  .admission-poster,
-  .poster-section,
-  .website-photo {
-    width: 100% !important;
-    max-width: 100% !important;
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-  }
-
-  .admission-poster img,
-  .poster-section img,
-  .website-photo img {
-    width: 100% !important;
-    max-width: 100% !important;
-    height: auto !important;
-    object-fit: contain !important;
-  }
+@media(max-width:767px){
+ .explore-poster-section,.supercharge-section{padding-top:18px;padding-bottom:22px}
+ .explore-poster{padding:22px 12px}
+ .supercharge-inner{padding:24px 14px}
+ .supercharge-photo-wrap{min-height:280px}
+}
 </style>
 </head>
 <body>
@@ -344,7 +300,6 @@ footer{padding:35px 20px;background:#24203f;color:white}
 <article class="age-card"><div class="age-icon">🌱</div><h3>6. Adult & Lifelong Learners</h3><p>Anyone who wants to improve English, learn computers, explore technology or develop a new skill is welcome.</p></article></div>
 <div class="age-message"><h3>💜 Separate Learning Groups for Every Learner</h3><p>We understand that a young child, a school student, a college learner and an adult have different learning needs. Students are grouped according to age, educational level, course and learning requirements.</p></div><div class="age-tagline">YOUR AGE DOESN'T DEFINE YOUR FUTURE!</div><h3>Let's Learn Together, Grow Together & Build Our Future Together!</h3><p>Whether you are 5 or 50, it's never too late to learn something new.</p><p><strong>🌟 KuKu Kids Care – Empowering Every Learner, At Every Age!</strong></p><a href="#trial" class="btn pink">🚀 Start Your Learning Journey</a></div></section>
 <div style="text-align:center;margin:28px auto;padding:0 14px"><h3 style="color:#6847d9">Learn Today. Build Skills for Tomorrow!</h3><p style="color:#69647e">Start your learning journey with KuKu Kids Care.</p><a class="btn pink" href="#trial">🎓 Enquire About Courses</a></div>
-<!-- Age Is No Bar poster: enlarged on desktop and full-width responsive on mobile -->
 <div class="website-photo"><img src="file_0000000037b482119a0f15105de0314d.png" alt="KuKu Kids Care Age Is No Bar learning poster" loading="lazy"></div>
 <section><div class="container"><div class="band"><div><h2>Small Steps Today. A Brighter Future Tomorrow!</h2><p>Ask us about class timings and the best learning option for your age and learning goals.</p></div><a class="btn yellow" href="https://wa.me/918810397239?text=Hello%20KuKu%20Kids%20Care%2C%20I%20want%20to%20know%20about%20your%20courses." target="_blank" rel="noopener">Chat on WhatsApp ↗</a></div></div></section>
 <section class="admission-poster" aria-label="Admissions poster"><img src="file_000000004dfc82118f2ecc3c5ddab9ae.png.png" alt="KuKu Kids Care Admissions Open 2027-28" loading="lazy"></section>
